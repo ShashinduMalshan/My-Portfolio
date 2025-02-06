@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2e9b6-d6f9-4123-83cb-ba70493595e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/asset/20250130_122741.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/icons8-github-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/icons8-instagram-logo-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/icons8-linkedin-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/icons8-x-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f5a2e9b6-d6f9-4123-83cb-ba70493595e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
