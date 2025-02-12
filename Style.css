@@ -1,3 +1,67 @@
 head{
     color: gray;
 }
+#contactMe {
+
+
+        font-family: Paytone One, serif;
+        font-size: 44px;
+        margin-left: 309px;
+
+        background: linear-gradient(to right, rgba(35, 130, 199, 1) 0%, rgba(180, 71, 71, 1) 29%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
+#contactHeader h3 {
+    background: lightcoral;
+    color: white;
+    font-size: 27px;
+    font-family: Orelega One, serif;
+
+}
+
+
+
+#contactPa{
+    background:gray;
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+    width: 645px;
+    max-width: fit-content;
+
+}
+
+.contactTxt {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+#socialImageInContact{
+
+    position: relative;
+    left: 236px;
+    background: gray;
+    width:412px ;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 24px;
+
+}
+
+
