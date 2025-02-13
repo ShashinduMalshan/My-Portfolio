@@ -14,13 +14,6 @@ head{
 
 }
 
-#contactHeader h3 {
-    background: lightcoral;
-    color: white;
-    font-size: 27px;
-    font-family: Orelega One, serif;
-
-}
 
 
 
@@ -106,5 +99,28 @@ head{
 }
 #msgBtn:hover {
     opacity: 1;
+    transform: scale(1.1);
 
+
+}
+
+#contactBody{
+
+    position: relative;
+    left: 252px;
+}
+
+#contactBody h3{
+
+    background: lightcoral;
+    color: white;
+    font-size: 27px;
+    font-family: Orelega One, serif;
+}
+
+
+.contactBody{
+    display: inline-block;
+    position: absolute;
+    right: 322px;
 }
