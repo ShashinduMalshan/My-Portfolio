@@ -62,6 +62,49 @@ head{
     gap: 16px;
     border-radius: 24px;
 
+
 }
 
+.placeholderNormal {
 
+    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    width: 419px;
+    height: 39px;
+    border-radius: 30px;
+    border-color: transparent;
+
+
+}
+
+#placeholderNormalTxtArea{
+
+    width: 419px;
+    height: 209px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    border-color: transparent;
+
+
+}
+
+#msgBtn{
+
+    width: 167px;
+    height: 37px;
+    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    border-radius: 30px;
+    position: relative;
+    left: 236px;
+    border-color: transparent;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-size: 19px;
+    font-family: Paytone One, serif;
+
+
+}
+#msgBtn:hover {
+    opacity: 1;
+
+}
