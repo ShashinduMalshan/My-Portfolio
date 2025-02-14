@@ -2,7 +2,10 @@
 .skills{
     display: flex;
     align-items: center;
+    justify-content: center;
     width:100%;
+    gap: 80px;
+
 }
 
 .skills h4{
@@ -12,14 +15,7 @@
 
 .skills p{
     text-align: center;
-padding: 15px 15px }
-
-
-
-#PlatformImages {
-    display:grid ;
-    grid-template-columns: auto auto auto;
-}
+    padding: 15px 15px }
 
 .skillContext {
     display: grid;
@@ -27,15 +23,70 @@ padding: 15px 15px }
     column-gap: 16px;
     grid-template-columns: auto auto;
     width: 582px;
+    padding-left: 12%;
 }
 
 .skillCard{
     background: gray;
     border-radius: 38px;
+    width: 282px;
 
 
 }
 
+
+#PlatformImages {
+    display:grid ;
+    grid-template-columns: auto auto auto;
+    gap: 90px;
+
+
+
+
+
+}
+
+#PlatformImages img{
+
+    width: 62px;
+    height: 62px;
+
+}
+
+#Technical{
+
+    margin-top: -25px;
+
+
+}
+
+
+.icon-item{
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: gray;
+    border-radius: 50%;
+    width: 103px;
+    height: 100px;
+
+
+}
+.icon-item p {
+
+    margin-top: 17px;
+}
+
+.icon-item img {
+
+    margin-top: 18px;
+
+}
+@media (max-width: 1200px) {
+    .skills{
+        flex-direction: column;
+    }}
 
 
 #project{
