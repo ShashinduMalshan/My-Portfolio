@@ -1,3 +1,43 @@
+
+.skills{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+.skills h4{
+    text-align: center;
+    font-family: Koulen, sans-serif;
+}
+
+.skills p{
+    text-align: center;
+padding: 15px 15px }
+
+
+
+#PlatformImages {
+    display:grid ;
+    grid-template-columns: auto auto auto;
+}
+
+.skillContext {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: auto auto;
+    width: 582px;
+}
+
+.skillCard{
+    background: gray;
+    border-radius: 38px;
+
+
+}
+
+
+
 #project{
     display: flex;
     align-items: center;
