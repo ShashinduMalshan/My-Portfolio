@@ -1,3 +1,42 @@
+.homeContainer {
+    display:  inline-flex;
+    place-items: center;
+    column-gap: 291px;
+    position: relative;
+    left: 394px;
+
+
+}
+.homeContainer >div:first-child{
+    position: relative;
+    left: 150px;
+    top: 100px;
+
+
+}
+.homeContainer >div:first-child > h1{
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.name{
+    color: rgba(138, 143, 255, 1);
+}
+.homeContainer >div:first-child > h2{
+    font-family: Inter, serif;
+    font-size: 28px;
+    font-weight: bolder;
+
+
+}
+section h4{
+    text-align: center;
+    font-size: 24px;
+    font-family: Istok Web, serif;
+}
+
+
 
 #profilePic img {
     clip-path: ellipse(44% 50%);
