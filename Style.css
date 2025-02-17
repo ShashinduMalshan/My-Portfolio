@@ -1,11 +1,14 @@
+
+
 .homeContainer {
-    display:  inline-flex;
+    display:  flex;
+    grid-template-columns: auto auto;
     place-items: center;
     column-gap: 291px;
     position: relative;
-    left: 394px;
-
-
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 20px;
 }
 .homeContainer >div:first-child{
     position: relative;
@@ -15,6 +18,7 @@
 
 }
 .homeContainer >div:first-child > h1{
+    position: relative;
     font-family: Inter, sans-serif;
     font-size: 48px;
     font-weight: bolder;
@@ -24,9 +28,11 @@
     color: rgba(138, 143, 255, 1);
 }
 .homeContainer >div:first-child > h2{
+    position: relative;
     font-family: Inter, serif;
     font-size: 28px;
     font-weight: bolder;
+    top: -32px;
 
 
 }
@@ -34,6 +40,36 @@ section h4{
     text-align: center;
     font-size: 24px;
     font-family: Istok Web, serif;
+}
+
+
+
+
+#socialImage{
+    position: relative;
+    background: gray;
+    width:382px ;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 24px;
+
+}
+
+.homeContainer >div:first-child > h3{
+    background: linear-gradient(to right,rgba(145, 85, 76, 1),rgba(24, 97, 137, 1));
+    color: transparent;
+    background-clip: text;
+    width: 220px;
+    text-align: center;
+    position:absolute ;
+    left: 77px;
+    top: 265px;
+    font-family: Inter, serif;
+    font-size: 30px;
+
 }
 
 
@@ -255,7 +291,6 @@ section h4{
     gap: 10px;
     padding: 10px 20px;
     border-radius: 8px;
-
     color: black;
     font-size: 18px;
     font-weight: bold;
