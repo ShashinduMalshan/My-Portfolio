@@ -1,5 +1,14 @@
+body{    background: linear-gradient(to right,rgba(5, 7, 10, 1),rgba(16, 33, 56, 1),rgba(2, 2, 5, 1));
+}
+
+.main-root{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
 header{
-    background: gray;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,9 +18,16 @@ header{
     top: 0;
     z-index: 10000;
 }
+header h1{
+    color: white;
+    font-size: 1.625em;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+
+}
+
 
 nav ul {
-
     list-style: none;
     display: flex;
     gap: 20px;
@@ -36,13 +52,13 @@ nav ul li  a{
 
 .homeContainer {
     display:  flex;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
     place-items: center;
-    column-gap: 291px;
+    column-gap: 221px;
     position: relative;
     text-align: center;
-    padding-left: 350px;
-    padding-right: 20px;
+    align-items: center;
 }
 .homeContainer >div:first-child{
     position: relative;
@@ -54,6 +70,7 @@ nav ul li  a{
 .homeContainer >div:first-child > h1{
     position: relative;
     font-family: Inter, sans-serif;
+    color: white;
     font-size: 48px;
     font-weight: bolder;
 }
@@ -64,6 +81,7 @@ nav ul li  a{
 .homeContainer >div:first-child > h2{
     position: relative;
     font-family: Inter, serif;
+    color: white;
     font-size: 28px;
     font-weight: bolder;
     top: -32px;
@@ -74,6 +92,9 @@ section h4{
     text-align: center;
     font-size: 24px;
     font-family: Istok Web, serif;
+    color: white;
+    position: relative;
+    margin-top: 159px;
 }
 
 
@@ -108,42 +129,85 @@ section h4{
 
 
 
+#profilePic{
+
+
+    position: relative;
+
+
+
+}
+
+
 #profilePic img {
     clip-path: ellipse(44% 50%);
-    width: 600px;
-    height: 600px;
+    width: 540px;
+    height: 520px;
     object-fit: contain;
     overflow: hidden;
     position: relative;
-    top: 5px;
+    top: 71px;
     left: -1px;
 
 }
 
-#circle{
-    width: 500px;
-    height: 500px;
+.circle{
+    width: 445px;
+    height: 445px;
     background: linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));
     border-radius: 50%;
     position: absolute;
-    margin-top: -503px;
-    margin-left: 49px;
+    margin-top: -379px;
+    margin-left: 46px;
     z-index: -1;
     opacity: 0.8;
 
 
 }
 
-#backCircle{
-    width: 550px;
-    height: 550px;
+.backCircle{
+    width: 500px;
+    height: 500px;
     background:linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));
     border-radius: 50%;
     position: absolute;
-    margin-top: -529px;
-    margin-left: 26px;
+    margin-top: -410px;
+    margin-left: 19px;
     z-index: -2;
     filter: blur(19px);
+}
+
+#about{
+    background: rgba(62, 64, 99, 1);
+    margin: 150px;
+    height: 709px;
+    opacity: 0.8;
+    border-radius: 75px;
+
+
+}
+
+#about > :first-child{
+    position: relative;
+    background: linear-gradient(to right,rgba(54, 121, 212, 1),rgba(255, 255, 255, 1));
+    background-clip: text;
+    color: transparent;
+    width: 220px;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    top: 76px;
+    font-weight: bolder;
+    margin-left: 71px;
+}
+#about > :nth-child(2){
+    color: white;
+    margin-top: 147px;
+    margin-left: 181px;
+    width: 658px;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+
 }
 
 
@@ -159,6 +223,7 @@ section h4{
 .skills h4{
     text-align: center;
     font-family: Koulen, sans-serif;
+
 }
 
 .skills p{
