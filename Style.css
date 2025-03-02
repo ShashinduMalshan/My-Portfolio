@@ -248,7 +248,7 @@ section h4{
         background: linear-gradient(to right,rgba(255, 252, 252, 1),rgba(115, 115, 115, 1));
         color: transparent;
         background-clip:text;
-
+        text-align: center;
         position: relative;
         font-family: Inter, serif;
         font-size: 32px;
@@ -256,50 +256,20 @@ section h4{
         top: 0;
     }
 
-    /*.skills h4{*/
-    /*    text-align: center;*/
-    /*    font-family: Koulen, sans-serif;*/
 
-    /*}*/
+    #PlatformImages {
+        display:grid ;
+        position: relative;
+        grid-template-columns: auto auto auto;
+        gap: 90px;
+    }
 
-    /*.skills p{*/
-    /*    text-align: center;*/
-    /*    padding: 15px 15px*/
-    /*}*/
+    #PlatformImages img{
 
-    /*.card{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(2 ,1fr);*/
-    /*    gap: 12px;*/
-    /*}*/
+        width: 62px;
+        height: 62px;
 
-
-    /*.skillCard{*/
-
-    /*    background: gray;*/
-    /*    border-radius: 38px;*/
-
-
-
-    /*}*/
-
-    /*#PlatformImages {*/
-    /*    display:grid ;*/
-    /*    grid-template-columns: auto auto auto;*/
-    /*    gap: 90px;*/
-
-
-
-
-
-    /*}*/
-
-    /*#PlatformImages img{*/
-
-    /*    width: 62px;*/
-    /*    height: 62px;*/
-
-    /*}*/
+    }
 
     /*.icon-item{*/
     /*    text-align: center;*/
@@ -324,6 +294,37 @@ section h4{
     /*    margin-top: 18px;*/
 
     /*}*/
+
+
+
+
+
+
+
+
+    /*.skills h4{*/
+    /*    text-align: center;*/
+    /*    font-family: Koulen, sans-serif;*/
+
+    /*}*/
+
+    /*.skills p{*/
+    /*    text-align: center;*/
+    /*    padding: 15px 15px*/
+    /*}*/
+
+    /*.card{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(2 ,1fr);*/
+    /*    gap: 12px;*/
+    /*}*/
+
+
+    /*.skillCard{*/
+
+    /*    background: gray;*/
+    /*    border-radius: 38px;*/
+
 
 
 
