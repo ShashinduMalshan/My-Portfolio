@@ -262,6 +262,7 @@ section h4{
         position: relative;
         grid-template-columns: auto auto auto;
         gap: 90px;
+        column-gap: 0;
         place-items: center;
         top: 150px;
 
@@ -302,14 +303,11 @@ section h4{
 
 
 
+    .skills h4{
+        text-align: center;
+        font-family: Koulen, sans-serif;
 
-
-
-    /*.skills h4{*/
-    /*    text-align: center;*/
-    /*    font-family: Koulen, sans-serif;*/
-
-    /*}*/
+    }
 
     /*.skills p{*/
     /*    text-align: center;*/
