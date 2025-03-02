@@ -244,6 +244,13 @@ body > :nth-child(2)  h4{
 
 
 
+    .skillContext{
+
+
+    }
+
+
+
     .skillContext > h3{
 
         background: linear-gradient(to right,rgba(255, 252, 252, 1),rgba(115, 115, 115, 1));
@@ -332,6 +339,8 @@ body > :nth-child(2)  h4{
     /*margin-top: 159px;*/
     }
 
+
+
     .card{
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
@@ -341,18 +350,17 @@ body > :nth-child(2)  h4{
 
     }
 
-    @media all and (max-width: 1410px){
+     @media all and (max-width: 1410px){
+        .skills{
 
+            grid-template-columns: repeat(1 , 1fr);
+            height: fit-content;
+        }
 
-    .skills{
+         .skillContext {
+            height: 801px;
 
-        grid-template-columns: repeat(1 , 1fr);
-        height: fit-content;
-
-
-    }
-
-    }
+         }}
 
 
     #myProject h1{
@@ -365,24 +373,46 @@ body > :nth-child(2)  h4{
     font-family: Paytone One, sans-serif;
     font-size: 44px;
     padding-left: 45px;
+
     }
 
 
     #project{
+        position:relative;
         display: flex;
-        align-items: center;
         text-align: center;
         padding: 24px;
+        place-content: center;
+        gap: 30px;
+        height: 675px;
+    }
+
+    .projectCards{
+
+        display: inline-block;
+        /*grid-template-rows: repeat(4 , 1fr);*/
+        position: relative;
+        background: gray;
+        width: 350px;
+        border-radius: 25px;
+
+    }
+
+    .projectCards > img{
+        max-width: fit-content;
+
 
 
     }
 
 
-
-    @media all and (max-width: 1223px) {
-        #project{
-            flex-direction: column;
-        }}
+    .ProjectBtn{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     .btn {
         display: inline-flex;
         align-items: center;
@@ -424,6 +454,15 @@ body > :nth-child(2)  h4{
     .btn:hover .arrow {
         transform: translateX(10px); /* Arrow moves to the right on hover */
     }
+
+
+
+
+
+    /*@media all and (max-width: 1223px) {*/
+    /*    #project{*/
+    /*        flex-direction: column;*/
+    /*    }}*/
 
 
 
