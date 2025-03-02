@@ -459,10 +459,25 @@ body > :nth-child(2)  h4{
 
 
 
-    /*@media all and (max-width: 1223px) {*/
-    /*    #project{*/
-    /*        flex-direction: column;*/
-    /*    }}*/
+    @media all and (max-width: 1220px) {
+        #project{
+            gap: 15px;
+        }}
+
+    @media all and (max-width: 1161px) {
+        #project{
+            gap: 7px;
+        }}
+
+    @media all and (max-width: 1128px) {
+        #project{
+            display: block;
+            height: 100%;
+        }
+        .projectCards{
+            height: 673px;
+        }
+    }
 
 
 
