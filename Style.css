@@ -212,6 +212,9 @@ section h4{
 }
 
 
+
+
+
 #mySkill > h1{
 
     position: relative;
@@ -219,9 +222,6 @@ section h4{
     color: transparent;
     background-clip: text;
     width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Paytone One, sans-serif;
     font-size: 48px;
     top: 45%; /* Move the element down by 50% of the parent's height */
@@ -235,7 +235,12 @@ section h4{
 
     .skills{
         position: relative;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+
     }
+
+
 
 
     .skillContext > h3{
@@ -244,274 +249,265 @@ section h4{
         color: transparent;
         background-clip:text;
 
-        position: absolute;
+        position: relative;
         font-family: Inter, serif;
         font-size: 32px;
         font-weight: bold;
         top: 0;
     }
 
-    .skills h4{
-        text-align: center;
-        font-family: Koulen, sans-serif;
+    /*.skills h4{*/
+    /*    text-align: center;*/
+    /*    font-family: Koulen, sans-serif;*/
 
-    }
+    /*}*/
 
-    .skills p{
-        text-align: center;
-        padding: 15px 15px
-    }
+    /*.skills p{*/
+    /*    text-align: center;*/
+    /*    padding: 15px 15px*/
+    /*}*/
 
-    .skillContext {
-        display: grid;
-        row-gap: 16px;
-        column-gap: 16px;
-        grid-template-columns: auto auto;
-        width: 582px;
-        padding-left: 12%;
-    }
+    /*.card{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(2 ,1fr);*/
+    /*    gap: 12px;*/
+    /*}*/
 
-    .skillCard{
-        background: gray;
-        border-radius: 38px;
-        width: 282px;
 
+    /*.skillCard{*/
 
-    }
+    /*    background: gray;*/
+    /*    border-radius: 38px;*/
 
-    #PlatformImages {
-        display:grid ;
-        grid-template-columns: auto auto auto;
-        gap: 90px;
 
 
+    /*}*/
 
+    /*#PlatformImages {*/
+    /*    display:grid ;*/
+    /*    grid-template-columns: auto auto auto;*/
+    /*    gap: 90px;*/
 
 
-    }
 
-    #PlatformImages img{
 
-        width: 62px;
-        height: 62px;
 
-    }
+    /*}*/
 
-    .icon-item{
-        text-align: center;
-        font-family: Inter, serif;
-        font-size: 20px;
-        font-weight: bold;
-        background: gray;
-        border-radius: 50%;
-        width: 103px;
-        height: 100px;
+    /*#PlatformImages img{*/
 
+    /*    width: 62px;*/
+    /*    height: 62px;*/
 
-    }
+    /*}*/
 
+    /*.icon-item{*/
+    /*    text-align: center;*/
+    /*    font-family: Inter, serif;*/
+    /*    font-size: 20px;*/
+    /*    font-weight: bold;*/
+    /*    background: gray;*/
+    /*    border-radius: 50%;*/
+    /*    width: 103px;*/
+    /*    height: 100px;*/
 
-    .icon-item p {
 
-        margin-top: 17px;
-    }
-    .icon-item img {
+    /*}*/
 
-        margin-top: 18px;
 
-    }
+    /*.icon-item p {*/
 
+    /*    margin-top: 17px;*/
+    /*}*/
+    /*.icon-item img {*/
 
-    @media (max-width: 1200px) {
-        .skills{
-            flex-direction: column;
-        }}
-    #project{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:100%;
+    /*    margin-top: 18px;*/
 
+    /*}*/
 
-    }
 
 
 
-    @media (max-width: 1200px) {
-        #project{
-            flex-direction: column;
-        }}
-    .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        background-color: #007bff;
-        border-radius: 12px;
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
 
-    .btn:hover {
-        background-color: #0056b3;
-    }
 
+    /*#project{*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    width:100%;*/
 
-    .btn-text {
-        margin-right: 10px;
-    }
 
-    .btn-icons img {
-        margin-left: 5px;
-    }
+    /*}*/
 
-    .arrow {
-        width: 20px;
-        height: 20px;
-        position: relative;
-        top: -7px;
-        transition: transform 0.3s ease;
-    }
 
 
+    /*@media (max-width: 1200px) {*/
+    /*    #project{*/
+    /*        flex-direction: column;*/
+    /*    }}*/
+    /*.btn {*/
+    /*    display: inline-flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    padding: 10px 20px;*/
+    /*    background-color: #007bff;*/
+    /*    border-radius: 12px;*/
+    /*    text-decoration: none;*/
+    /*    color: white;*/
+    /*    font-size: 16px;*/
+    /*    transition: background-color 0.3s ease;*/
+    /*}*/
 
-    .skills {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 80px;
+    /*.btn:hover {*/
+    /*    background-color: #0056b3;*/
+    /*}*/
 
-    }
 
+    /*.btn-text {*/
+    /*    margin-right: 10px;*/
+    /*}*/
 
-    .btn:hover .arrow {
-        transform: translateX(10px); /* Arrow moves to the right on hover */
-    }
+    /*.btn-icons img {*/
+    /*    margin-left: 5px;*/
+    /*}*/
 
+    /*.arrow {*/
+    /*    width: 20px;*/
+    /*    height: 20px;*/
+    /*    position: relative;*/
+    /*    top: -7px;*/
+    /*    transition: transform 0.3s ease;*/
+    /*}*/
 
-    #contactMe {
 
 
-        font-family: Paytone One, serif;
-        font-size: 44px;
-        margin-left: 309px;
 
-        background: linear-gradient(to right, rgba(35, 130, 199, 1) 0%, rgba(180, 71, 71, 1) 29%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 
-    }
+    /*.btn:hover .arrow {*/
+    /*    transform: translateX(10px); !* Arrow moves to the right on hover *!*/
+    /*}*/
 
 
+    /*#contactMe {*/
 
 
-    #contactPa{
-        background:gray;
-        color: white;
-        padding: 10px;
-        font-size: 19px;
-        width: 645px;
-        max-width: fit-content;
+    /*    font-family: Paytone One, serif;*/
+    /*    font-size: 44px;*/
+    /*    margin-left: 309px;*/
 
-    }
+    /*    background: linear-gradient(to right, rgba(35, 130, 199, 1) 0%, rgba(180, 71, 71, 1) 29%);*/
+    /*    -webkit-background-clip: text;*/
+    /*    -webkit-text-fill-color: transparent;*/
 
-    .contactTxt {
+    /*}*/
 
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 20px;
-        border-radius: 8px;
-        color: black;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
 
-    }
 
-    #socialImageInContact{
 
-        position: relative;
-        left: 236px;
-        background: gray;
-        width:412px ;
-        height: 93px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        border-radius: 24px;
+    /*#contactPa{*/
+    /*    background:gray;*/
+    /*    color: white;*/
+    /*    padding: 10px;*/
+    /*    font-size: 19px;*/
+    /*    width: 645px;*/
+    /*    max-width: fit-content;*/
 
+    /*}*/
 
-    }
+    /*.contactTxt {*/
 
-    .placeholderNormal {
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    gap: 10px;*/
+    /*    padding: 10px 20px;*/
+    /*    border-radius: 8px;*/
+    /*    color: black;*/
+    /*    font-size: 18px;*/
+    /*    font-weight: bold;*/
+    /*    font-family: Arial, sans-serif;*/
 
-        background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
-        width: 419px;
-        height: 39px;
-        border-radius: 30px;
-        border-color: transparent;
+    /*}*/
 
+    /*#socialImageInContact{*/
 
-    }
+    /*    position: relative;*/
+    /*    left: 236px;*/
+    /*    background: gray;*/
+    /*    width:412px ;*/
+    /*    height: 93px;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    gap: 16px;*/
+    /*    border-radius: 24px;*/
 
-    #placeholderNormalTxtArea{
 
-        width: 419px;
-        height: 209px;
-        border-radius: 30px;
-        background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
-        border-color: transparent;
+    /*}*/
 
+    /*.placeholderNormal {*/
 
-    }
+    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
+    /*    width: 419px;*/
+    /*    height: 39px;*/
+    /*    border-radius: 30px;*/
+    /*    border-color: transparent;*/
 
-    #msgBtn{
 
-        width: 167px;
-        height: 37px;
-        background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);
-        border-radius: 30px;
-        position: relative;
-        left: 236px;
-        border-color: transparent;
-        cursor: pointer;
-        opacity: 0.6;
-        transition: 0.3s;
-        font-size: 19px;
-        font-family: Paytone One, serif;
+    /*}*/
 
+    /*#placeholderNormalTxtArea{*/
 
-    }
-    #msgBtn:hover {
-        opacity: 1;
-        transform: scale(1.1);
+    /*    width: 419px;*/
+    /*    height: 209px;*/
+    /*    border-radius: 30px;*/
+    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
+    /*    border-color: transparent;*/
 
 
-    }
+    /*}*/
 
-    #contactBody{
+    /*#msgBtn{*/
 
-        position: relative;
-        left: 252px;
-    }
+    /*    width: 167px;*/
+    /*    height: 37px;*/
+    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
+    /*    border-radius: 30px;*/
+    /*    position: relative;*/
+    /*    left: 236px;*/
+    /*    border-color: transparent;*/
+    /*    cursor: pointer;*/
+    /*    opacity: 0.6;*/
+    /*    transition: 0.3s;*/
+    /*    font-size: 19px;*/
+    /*    font-family: Paytone One, serif;*/
 
-    #contactBody h3{
 
-        background: lightcoral;
-        color: white;
-        font-size: 27px;
-        font-family: Orelega One, serif;
-    }
+    /*}*/
+    /*#msgBtn:hover {*/
+    /*    opacity: 1;*/
+    /*    transform: scale(1.1);*/
 
 
-    .contactBody{
-        display: inline-block;
-        position: absolute;
-        right: 322px;
-    }
+    /*}*/
+
+    /*#contactBody{*/
+
+    /*    position: relative;*/
+    /*    left: 252px;*/
+    /*}*/
+
+    /*#contactBody h3{*/
+
+    /*    background: lightcoral;*/
+    /*    color: white;*/
+    /*    font-size: 27px;*/
+    /*    font-family: Orelega One, serif;*/
+    /*}*/
+
+
+    /*.contactBody{*/
+    /*    display: inline-block;*/
+    /*    position: absolute;*/
+    /*    right: 322px;*/
+    /*}*/
 
