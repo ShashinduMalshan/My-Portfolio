@@ -309,10 +309,10 @@ section h4{
 
     }
 
-    /*.skills p{*/
-    /*    text-align: center;*/
-    /*    padding: 15px 15px*/
-    /*}*/
+    .skills p{
+        text-align: center;
+        padding: 15px 15px
+    }
 
     /*.card{*/
     /*    display: grid;*/
