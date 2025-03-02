@@ -314,6 +314,12 @@ section h4{
         padding: 15px 15px
     }
 
+    .skillCard{
+
+        background: gray;
+        border-radius: 38px;
+    }
+
     /*.card{*/
     /*    display: grid;*/
     /*    grid-template-columns: repeat(2 ,1fr);*/
@@ -321,10 +327,6 @@ section h4{
     /*}*/
 
 
-    /*.skillCard{*/
-
-    /*    background: gray;*/
-    /*    border-radius: 38px;*/
 
 
 
