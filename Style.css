@@ -341,70 +341,90 @@ body > :nth-child(2)  h4{
 
     }
 
+    @media all and (max-width: 1410px){
+
+
+    .skills{
+
+        grid-template-columns: repeat(1 , 1fr);
+        height: fit-content;
+
+
+    }
+
+    }
+
+
+    #myProject h1{
+
+    position: relative;
+    background: linear-gradient(to right,rgba(33, 108, 163, 1),rgba(180, 71, 71, 1));
+    color: transparent;
+    background-clip: text;
+    width: 228px;
+    font-family: Paytone One, sans-serif;
+    font-size: 44px;
+    padding-left: 45px;
+    }
+
+
+    #project{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+
+
+    }
+
+
+
+    @media all and (max-width: 1223px) {
+        #project{
+            flex-direction: column;
+        }}
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: #007bff;
+        border-radius: 12px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+
+    .btn-text {
+        margin-right: 10px;
+    }
+
+    .btn-icons img {
+        margin-left: 5px;
+    }
+
+    .arrow {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -7px;
+        transition: transform 0.3s ease;
+    }
 
 
 
 
 
+    .btn:hover .arrow {
+        transform: translateX(10px); /* Arrow moves to the right on hover */
+    }
 
-
-
-    /*#project{*/
-    /*    display: flex;*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*    width:100%;*/
-
-
-    /*}*/
-
-
-
-    /*@media (max-width: 1200px) {*/
-    /*    #project{*/
-    /*        flex-direction: column;*/
-    /*    }}*/
-    /*.btn {*/
-    /*    display: inline-flex;*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*    padding: 10px 20px;*/
-    /*    background-color: #007bff;*/
-    /*    border-radius: 12px;*/
-    /*    text-decoration: none;*/
-    /*    color: white;*/
-    /*    font-size: 16px;*/
-    /*    transition: background-color 0.3s ease;*/
-    /*}*/
-
-    /*.btn:hover {*/
-    /*    background-color: #0056b3;*/
-    /*}*/
-
-
-    /*.btn-text {*/
-    /*    margin-right: 10px;*/
-    /*}*/
-
-    /*.btn-icons img {*/
-    /*    margin-left: 5px;*/
-    /*}*/
-
-    /*.arrow {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    position: relative;*/
-    /*    top: -7px;*/
-    /*    transition: transform 0.3s ease;*/
-    /*}*/
-
-
-
-
-
-    /*.btn:hover .arrow {*/
-    /*    transform: translateX(10px); !* Arrow moves to the right on hover *!*/
-    /*}*/
 
 
     /*#contactMe {*/
