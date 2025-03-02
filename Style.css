@@ -262,6 +262,8 @@ section h4{
         position: relative;
         grid-template-columns: auto auto auto;
         gap: 90px;
+        place-items: center;
+
     }
 
     #PlatformImages img{
