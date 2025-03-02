@@ -263,6 +263,7 @@ section h4{
         grid-template-columns: auto auto auto;
         gap: 90px;
         place-items: center;
+        top: 150px;
 
     }
 
