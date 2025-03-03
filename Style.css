@@ -564,21 +564,24 @@ body > :nth-child(2) h4 {
 
 }
 
-    /*#socialImageInContact{*/
+#socialImageInContact{
 
-    /*    position: relative;*/
-    /*    left: 236px;*/
-    /*    background: gray;*/
-    /*    width:412px ;*/
-    /*    height: 93px;*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    gap: 16px;*/
-    /*    border-radius: 24px;*/
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: gray;
+    width:286px ;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 24px;
+    opacity: 0.7;
 
 
-    /*}*/
+}
 
     /*.placeholderNormal {*/
 
