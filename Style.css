@@ -377,7 +377,16 @@ body > :nth-child(2)  h4{
          }}
 
 
-    #myProject h1{
+    #myProject{
+
+        position: relative;
+        display: flex;
+        place-content: center;
+
+    }
+
+
+    #myProjectHeader h1{
 
     position: relative;
     background: linear-gradient(to right,rgba(33, 108, 163, 1),rgba(180, 71, 71, 1));
@@ -389,6 +398,17 @@ body > :nth-child(2)  h4{
     padding-left: 45px;
 
     }
+
+    #myProject i {
+ position: relative;
+        place-content: center;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+
+    }
+
+
 
 
     #project{
@@ -501,6 +521,11 @@ body > :nth-child(2)  h4{
         .projectCards{
             height: 673px;
         }
+
+        #myProject i{
+            display: none;
+        }
+
     }
 
 
