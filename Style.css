@@ -112,7 +112,7 @@ nav ul li a{
 }
 
 /* Tagline styling below home section */
-body > :nth-child(2) h4{
+body > :nth-child(2) h4 {
     text-align: center;
     font-size: 24px;
     font-family: Istok Web, serif;
@@ -456,6 +456,18 @@ body > :nth-child(2) h4{
     transform: translateX(10px); /* Arrow moves to the right on hover */
 }
 
+
+
+/* Tagline styling below project section */
+ #myProjectHeader h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Istok Web, serif;
+    color: white;
+    position: relative;
+    bottom: -15px;
+}
+
 /* Responsive adjustments for projects section */
 @media all and (max-width: 1220px) {
     #project{
@@ -485,45 +497,72 @@ body > :nth-child(2) h4{
 
 
 
-    /*#contactMe {*/
-
-
-    /*    font-family: Paytone One, serif;*/
-    /*    font-size: 44px;*/
-    /*    margin-left: 309px;*/
-
-    /*    background: linear-gradient(to right, rgba(35, 130, 199, 1) 0%, rgba(180, 71, 71, 1) 29%);*/
-    /*    -webkit-background-clip: text;*/
-    /*    -webkit-text-fill-color: transparent;*/
-
-    /*}*/
 
 
 
 
-    /*#contactPa{*/
-    /*    background:gray;*/
-    /*    color: white;*/
-    /*    padding: 10px;*/
-    /*    font-size: 19px;*/
-    /*    width: 645px;*/
-    /*    max-width: fit-content;*/
+#contact{
+    position: relative;
+    height: 100vh;
+}
 
-    /*}*/
 
-    /*.contactTxt {*/
+#contactMe {
 
-    /*    display: flex;*/
-    /*    align-items: center;*/
-    /*    gap: 10px;*/
-    /*    padding: 10px 20px;*/
-    /*    border-radius: 8px;*/
-    /*    color: black;*/
-    /*    font-size: 18px;*/
-    /*    font-weight: bold;*/
-    /*    font-family: Arial, sans-serif;*/
 
-    /*}*/
+    font-family: Paytone One, serif;
+    font-size: 44px;
+    margin-left: 309px;
+    background: linear-gradient(to right, rgba(35, 130, 199, 1) , rgba(180, 71, 71, 1));
+    background-clip: text;
+    color: transparent;
+    width: 241px;
+
+    }
+
+
+
+
+#contactPa{
+        color: white;
+        padding: 10px;
+        font-size: 19px;
+        width: 645px;
+        max-width: fit-content;
+
+    }
+
+
+#contactBody h3{
+
+        color: white;
+        font-size: 27px;
+        font-family: Orelega One, serif;
+    }
+
+.contactBody{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    place-items: center;
+    height: 90vh;
+}
+
+
+.contactTxt {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
 
     /*#socialImageInContact{*/
 
@@ -593,18 +632,7 @@ body > :nth-child(2) h4{
     /*    left: 252px;*/
     /*}*/
 
-    /*#contactBody h3{*/
-
-    /*    background: lightcoral;*/
-    /*    color: white;*/
-    /*    font-size: 27px;*/
-    /*    font-family: Orelega One, serif;*/
-    /*}*/
 
 
-    /*.contactBody{*/
-    /*    display: inline-block;*/
-    /*    position: absolute;*/
-    /*    right: 322px;*/
-    /*}*/
+
 
