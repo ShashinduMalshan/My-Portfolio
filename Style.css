@@ -1,13 +1,22 @@
+
+/*html {*/
+/*  scroll-snap-type: y mandatory;*/
+/*  scroll-behavior: smooth; !* Keep this here *!*/
+/*}*/
+
+/*section {*/
+/*  scroll-snap-align: center;*/
+/*  height: 100vh;*/
+/*  !* Remove scroll-behavior: smooth; *!*/
+/*}*/
+
+
 body{    background: linear-gradient(to right,rgba(5, 7, 10, 1),rgba(16, 33, 56, 1),rgba(2, 2, 5, 1));
 }
 
-.main-root{
-    width: 100%;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-}
 header{
+    scroll-snap-align: start;
+
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -48,7 +57,12 @@ nav ul li  a{
     font-weight: bold;
 }
 
-
+.main-root{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
 
 .homeContainer {
     display:  flex;
@@ -384,8 +398,9 @@ body > :nth-child(2)  h4{
         padding: 24px;
         place-content: center;
         gap: 30px;
-        height: 675px;
+        height: 634px;
     }
+
 
     .projectCards{
 
@@ -393,13 +408,20 @@ body > :nth-child(2)  h4{
         /*grid-template-rows: repeat(4 , 1fr);*/
         position: relative;
         background: gray;
-        width: 350px;
+        width: 330px;
         border-radius: 25px;
 
     }
 
+     #ticTacToe , #schoolManagementSystem{
+
+         margin-bottom: 19px;
+        margin-top: 19px;
+        width: 310px;
+    }
+
     .projectCards > img{
-        max-width: fit-content;
+        width:inherit;
 
 
 
@@ -459,6 +481,8 @@ body > :nth-child(2)  h4{
 
 
 
+
+
     @media all and (max-width: 1220px) {
         #project{
             gap: 15px;
@@ -478,6 +502,7 @@ body > :nth-child(2)  h4{
             height: 673px;
         }
     }
+
 
 
 
