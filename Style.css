@@ -609,7 +609,28 @@ body > :nth-child(2) h4 {
     font-family: Paytone One, serif;
 }
 
+@media all and (max-width: 1128px) {
 
+    .contactBody {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Two-column layout */
+        grid-row-gap: 53px;
+
+    }
+    .contactBodyContainer{
+        height: 100vh;
+
+    }
+
+    #MassageSection{
+        height: 100vh;
+        align-content: center;
+
+    }
+
+
+
+}
 
     /*#msgBtn:hover {*/
     /*    opacity: 1;*/
