@@ -573,64 +573,57 @@ body > :nth-child(2) h4 {
     opacity: 0.7; /* Semi-transparent background */
 }
 
-
+/* Input field styling */
 .placeholderNormal {
-    /*background: linear-gradient(to right, rgba(84, 149, 195), rgba(243, 243, 243));*/
-    width: 419px;
-    height: 39px;
-    border-radius: 30px;
-    border-color: transparent;
-
+    /* background: linear-gradient(to right, rgba(84, 149, 195), rgba(243, 243, 243)); */ /* Commented out gradient background */
+    width: 419px; /* Fixed width for input fields */
+    height: 39px; /* Fixed height for input fields */
+    border-radius: 30px; /* Rounded corners */
+    border-color: transparent; /* Transparent border */
 }
 
-#placeholderNormalTxtArea{
-    width: 419px;
-    height: 209px;
-    border-radius: 30px;
-    /*background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
-    border-color: transparent;
+/* Textarea styling */
+#placeholderNormalTxtArea {
+    width: 419px; /* Fixed width for textarea */
+    height: 209px; /* Fixed height for textarea */
+    border-radius: 30px; /* Rounded corners */
+    /* background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%); */ /* Commented out gradient background */
+    border-color: transparent; /* Transparent border */
+}
 
-
-    }
-
-
-
-#msgBtn{
-
-    width: 100%;
-    height: 42px;
-    border-radius: 30px;
+/* Submit button styling */
+#msgBtn {
+    width: 100%; /* Full width of the container */
+    height: 42px; /* Fixed height for the button */
+    border-radius: 30px; /* Rounded corners */
     position: relative;
-    border-color: transparent;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-    font-size: 19px;
-    font-family: Paytone One, serif;
+    border-color: transparent; /* Transparent border */
+    cursor: pointer; /* Pointer cursor on hover */
+    opacity: 0.6; /* Semi-transparent button */
+    transition: 0.3s; /* Smooth transition for hover effects */
+    font-size: 19px; /* Font size */
+    font-family: Paytone One, serif; /* Font family */
 }
 
+/* Responsive adjustments for contact section */
 @media all and (max-width: 1128px) {
-
+    /* Adjust contact body layout for smaller screens */
     .contactBody {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Two-column layout */
-        grid-row-gap: 53px;
-
-    }
-    .contactBodyContainer{
-        height: 100vh;
-
+        grid-template-columns: repeat(1, 1fr); /* Single-column layout */
+        grid-row-gap: 53px; /* Space between rows */
     }
 
-    #MassageSection{
-        height: 100vh;
-        align-content: center;
-
+    /* Adjust contact body container height */
+    .contactBodyContainer {
+        height: 100vh; /* Full viewport height */
     }
 
-
-
-}
+    /* Adjust message section height and alignment */
+    #MassageSection {
+        height: 100vh; /* Full viewport height */
+        align-content: center; /* Center content vertically */
+    }}
 
     /*#msgBtn:hover {*/
     /*    opacity: 1;*/
