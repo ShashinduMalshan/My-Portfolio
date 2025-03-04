@@ -500,128 +500,102 @@ body > :nth-child(2) h4 {
 
 
 
-
-#contact{
+/* Contact section styling */
+#contact {
     position: relative;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
 
-
+/* Contact heading styling */
 #contactMe {
-
-
     font-family: Paytone One, serif;
     font-size: 44px;
-    margin-left: 309px;
-    background: linear-gradient(to right, rgba(35, 130, 199, 1) , rgba(180, 71, 71, 1));
-    background-clip: text;
-    color: transparent;
-    width: 241px;
-
-    }
-
-
-
-
-#contactPa{
-        color: white;
-        padding: 10px;
-        font-size: 19px;
-        width: 645px;
-        max-width: fit-content;
-
-    }
-
-
-#contactBody h3{
-
-        color: white;
-        font-size: 27px;
-        font-family: Orelega One, serif;
-    }
-
-.contactBody{
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: relative;
-    place-items: center;
-    height: 90vh;
+    margin-left: 309px; /* Left margin for positioning */
+    background: linear-gradient(to right, rgba(35, 130, 199, 1), rgba(180, 71, 71, 1)); /* Gradient background */
+    background-clip: text; /* Apply gradient to text */
+    color: transparent; /* Make text color transparent to show gradient */
+    width: 241px; /* Fixed width for the heading */
 }
 
+/* Contact paragraph styling */
+#contactPa {
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+    width: 645px; /* Fixed width for the paragraph */
+    max-width: fit-content; /* Ensure it fits content */
+}
 
+/* Contact body heading styling */
+#contactBody h3 {
+    color: white;
+    font-size: 27px;
+    font-family: Orelega One, serif;
+}
+
+/* Contact body container styling */
+.contactBody {
+    margin: 19px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    position: relative;
+    place-items: center; /* Center items horizontally and vertically */
+    height: 90vh; /* 90% of viewport height */
+}
+
+/* Contact text styling */
 .contactTxt {
-
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Space between icon and text */
     padding: 10px 20px;
     border-radius: 8px;
     color: white;
     font-size: 18px;
     font-weight: bold;
     font-family: Arial, sans-serif;
-
 }
 
-#socialImageInContact{
-
+/* Social media icons container in contact section */
+#socialImageInContact {
     position: relative;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto; /* Center horizontally */
     background: gray;
-    width:286px ;
+    width: 286px;
     height: 71px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 16px; /* Space between icons */
     border-radius: 24px;
-    opacity: 0.7;
+    opacity: 0.7; /* Semi-transparent background */
+}
 
+
+.placeholderNormal {
+    /*background: linear-gradient(to right, rgba(84, 149, 195), rgba(243, 243, 243));*/
+    width: 419px;
+    height: 39px;
+    border-radius: 30px;
+    border-color: transparent;
 
 }
 
-    /*.placeholderNormal {*/
-
-    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
-    /*    width: 419px;*/
-    /*    height: 39px;*/
-    /*    border-radius: 30px;*/
-    /*    border-color: transparent;*/
-
-
-    /*}*/
-
-    /*#placeholderNormalTxtArea{*/
-
-    /*    width: 419px;*/
-    /*    height: 209px;*/
-    /*    border-radius: 30px;*/
-    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
-    /*    border-color: transparent;*/
+#placeholderNormalTxtArea{
+    width: 419px;
+    height: 209px;
+    border-radius: 30px;
+    /*background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
+    border-color: transparent;
 
 
-    /*}*/
-
-    /*#msgBtn{*/
-
-    /*    width: 167px;*/
-    /*    height: 37px;*/
-    /*    background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%);*/
-    /*    border-radius: 30px;*/
-    /*    position: relative;*/
-    /*    left: 236px;*/
-    /*    border-color: transparent;*/
-    /*    cursor: pointer;*/
-    /*    opacity: 0.6;*/
-    /*    transition: 0.3s;*/
-    /*    font-size: 19px;*/
-    /*    font-family: Paytone One, serif;*/
+    }
 
 
-    /*}*/
+
+
     /*#msgBtn:hover {*/
     /*    opacity: 1;*/
     /*    transform: scale(1.1);*/
