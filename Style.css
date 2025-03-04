@@ -595,6 +595,21 @@ body > :nth-child(2) h4 {
 
 
 
+#msgBtn{
+
+    width: 100%;
+    height: 42px;
+    border-radius: 30px;
+    position: relative;
+    border-color: transparent;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-size: 19px;
+    font-family: Paytone One, serif;
+}
+
+
 
     /*#msgBtn:hover {*/
     /*    opacity: 1;*/
