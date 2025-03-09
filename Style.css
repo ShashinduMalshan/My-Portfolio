@@ -12,7 +12,7 @@
 
 /* Main background gradient for the entire page */
 body{
-    background: linear-gradient(to right,rgba(5, 7, 10, 1),rgba(16, 33, 56, 1),rgba(2, 2, 5, 1));
+     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
 /* Header styling - fixed at top with transparent background */
@@ -31,8 +31,10 @@ header{
 
 /* Header title styling */
 header h1 {
-    color: white;
-    font-size: 1.625em;
+    background: linear-gradient(to right, #4cc9f0, #4361ee);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.56em;
     font-family: Inter, sans-serif;
     font-weight: bold;
 }
@@ -98,17 +100,20 @@ nav ul li a{
 
 /* Name highlight with special color */
 .name{
-    color: rgba(138, 143, 255, 1);
+    background: linear-gradient(to right, #4cc9f0, #4361ee);
+    background-clip: text;
+    color: transparent;
 }
 
 /* Subtitle in home section */
 .homeContainer >div:first-child > h2{
     position: relative;
     font-family: Inter, serif;
-    color: white;
+    color: #64748b;
     font-size: 28px;
     font-weight: bolder;
     top: -32px;
+
 }
 
 /* Tagline styling below home section */
@@ -143,7 +148,7 @@ body > :nth-child(2) h4 {
     text-align: center;
     position: absolute;
     left: 77px;
-    top: 265px;
+    top: 243px;
     font-family: Inter, serif;
     font-size: 30px;
 }
@@ -199,6 +204,7 @@ body > :nth-child(2) h4 {
     height: 709px;
     opacity: 0.8;
     border-radius: 75px;
+    overflow: auto;
 }
 
 /* About section heading with gradient */
