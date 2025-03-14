@@ -119,8 +119,8 @@ nav ul li a{
 /* Tagline styling below home section */
 body > :nth-child(2) h4 {
     text-align: center;
-    font-size: 24px;
-    font-family: Istok Web, serif;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
     color: white;
     position: relative;
     margin-top: 159px;
@@ -198,55 +198,57 @@ body > :nth-child(2) h4 {
 
 /* About section styling */
 #about{
+    padding: 100px 0;
+}
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/*who i am text*/
+.about-container > h1{
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
     position: relative;
-    background: rgba(62, 64, 99, 1);
-    margin: 150px;
-    height: 709px;
-    opacity: 0.8;
-    border-radius: 75px;
-    overflow: auto;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    line-height: 1.6;
+
+}
+/*about div box */
+.about-content{
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 20px;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* About section heading with gradient */
-#about > :first-child{
-    position: absolute;
-    background: linear-gradient(to right,rgba(54, 121, 212, 1),rgba(255, 255, 255, 1));
-    background-clip: text;
-    color: transparent;
-    width: 220px;
-    font-family: Inter, sans-serif;
-    font-size: 48px;
-    top: 10px;
-    font-weight: bolder;
-    margin-left: 71px;
-}
 
 /* About section paragraph text */
-#about > div > p {
-    position: absolute;
-    color: white;
-    top: 188px;
-    left: 200px;
-    width: 40%;
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
+.about-content > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 /* Skills section heading */
 #mySkill > h1{
-    position: relative;
-    background: linear-gradient(to right,rgba(33, 108, 163, 1),rgba(180, 71, 71, 1));
-    color: transparent;
-    background-clip: text;
-    width: 200px;
-    font-family: Paytone One, sans-serif;
-    font-size: 48px;
-    top: 45%; /* Move the element down by 50% of the parent's height */
-    left: 45%;
-    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
     text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    line-height: 1.6;
 }
 
 /* Skills section container */
