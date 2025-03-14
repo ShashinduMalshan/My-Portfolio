@@ -13,11 +13,12 @@
 /* Main background gradient for the entire page */
 body{
      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    width: fit-content;
 }
 
 /* Header styling - fixed at top with transparent background */
 header{
-    scroll-snap-align: start;
+    /*scroll-snap-align: start;*/
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -63,31 +64,30 @@ nav ul li a{
 }
 
 /* Main content container */
-.main-root{
-    width: 100%;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-}
+/*.main-root{*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    justify-content: center;*/
+/*}*/
 
 /* Home section container styling */
 .homeContainer {
     display: flex;
-    grid-template-columns: repeat(2,1fr);
     justify-content: center;
-    place-items: center;
-    column-gap: 221px;
+    column-gap: 100px;
     position: relative;
     text-align: center;
-    align-items: center;
+    align-items: end;
+    margin: 80px 47px;
 }
 
 /* Styling for the text content in home section */
-.homeContainer >div:first-child{
-    position: relative;
-    left: 150px;
-    top: 100px;
-}
+/*.homeContainer >div:first-child{*/
+/*    position: relative;*/
+/*    left: 150px;*/
+/*    top: 100px;*/
+/*}*/
 
 /* Main heading in home section */
 .homeContainer >div:first-child > h1{
@@ -119,19 +119,18 @@ nav ul li a{
 /* Tagline styling below home section */
 body > :nth-child(2) h4 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
     color: white;
     position: relative;
-    margin-top: 159px;
+    bottom: -18px;
 }
 
 /* Social media links container */
 #socialImage{
     position: relative;
     background: gray;
-    width: 382px;
-    height: 90px;
+    padding: 14px 57px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,11 +143,6 @@ body > :nth-child(2) h4 {
     background: linear-gradient(to right,rgba(145, 85, 76, 1),rgba(24, 97, 137, 1));
     color: transparent;
     background-clip: text; /* Text gradient effect */
-    width: 220px;
-    text-align: center;
-    position: absolute;
-    left: 77px;
-    top: 243px;
     font-family: Inter, serif;
     font-size: 30px;
 }
@@ -164,10 +158,6 @@ body > :nth-child(2) h4 {
     width: 540px;
     height: 520px;
     object-fit: contain;
-    overflow: hidden;
-    position: relative;
-    top: 71px;
-    left: -1px;
 }
 
 /* Inner circle behind profile picture */
@@ -177,7 +167,7 @@ body > :nth-child(2) h4 {
     background: linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));
     border-radius: 50%;
     position: absolute;
-    margin-top: -379px;
+    margin-top: -452px;
     margin-left: 46px;
     z-index: -1;
     opacity: 0.8;
@@ -190,7 +180,7 @@ body > :nth-child(2) h4 {
     background: linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));
     border-radius: 50%;
     position: absolute;
-    margin-top: -410px;
+    margin-top: -479px;
     margin-left: 19px;
     z-index: -2;
     filter: blur(19px); /* Adds glow effect */
@@ -256,6 +246,14 @@ body > :nth-child(2) h4 {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.skillContext{
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 0 52px;
+    padding: 0 25px;
 }
 
 /* Skill context section headings */
@@ -329,6 +327,7 @@ body > :nth-child(2) h4 {
     background: gray;
     border-radius: 38px;
     height: 278px;
+    overflow: auto;
 }
 
 /* Professional skills grid layout */
