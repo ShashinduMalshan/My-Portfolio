@@ -23,8 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 13px;
+    margin: 0 13px;
     position: relative;
     top: 0;
     z-index: 10000; /* Ensures header stays on top of other elements */
@@ -87,6 +86,7 @@ nav ul li a{
     .homeContainer {
         flex-direction: column-reverse;
         align-items: center;
+        gap: 80px;
     }
 
 }
