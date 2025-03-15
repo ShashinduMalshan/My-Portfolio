@@ -12,7 +12,7 @@
 
 /* Main background gradient for the entire page */
 body{
-     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+     background: linear-gradient( #0f172a 0%, #1e293b 100%);
     width: fit-content;
 }
 
@@ -82,6 +82,22 @@ nav ul li a{
     margin: 80px 47px;
 }
 
+@media all and (max-width: 768px) {
+
+    .homeContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+
+@media all and (max-width: 1024px) {
+
+    .homeContainer {
+        column-gap: 70px;
+    }
+}
 /* Styling for the text content in home section */
 /*.homeContainer >div:first-child{*/
 /*    position: relative;*/
