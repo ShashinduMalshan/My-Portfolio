@@ -49,9 +49,12 @@ nav ul {
     padding: 10px;
 }
 
-.menu-Btn{
-    display: none;
+.menu-btn {
+    display: none !important;
 }
+
+
+
 /* Navigation list item styling */
 nav ul li {
     display: inline;
@@ -68,11 +71,19 @@ nav ul li a{
 
 @media all and (max-width: 768px) {
 
-        nav ul{
-            display: none;
-        }
+    nav ul {
+        display: none;
 
-}
+    }
+
+    .menu-btn {
+            display:block !important;
+    }
+
+
+
+
+    }
 
 
 
