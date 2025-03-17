@@ -1,0 +1,196 @@
+
+/*body{*/
+/*     background: linear-gradient( #0f172a 0%, #1e293b 100%);*/
+/*    !*width: fit-content;*!*/
+/*}*/
+
+/*!* Header styling - fixed at top with transparent background *!*/
+/*header{*/
+/*    !*scroll-snap-align: start;*!*/
+/*    background: transparent;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin: 0 13px;*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    z-index: 10000; !* Ensures header stays on top of other elements *!*/
+/*}*/
+
+/*!* Header title styling *!*/
+/*header h1 {*/
+/*    background: linear-gradient(to right, #4cc9f0, #4361ee);*/
+/*    background-clip: text;*/
+/*    color: transparent;*/
+/*    font-size: 1.56em;*/
+/*    font-family: Inter, sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*!* Navigation menu styling *!*/
+/*nav ul {*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*    margin: 0;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*!* Navigation list item styling *!*/
+/*nav ul li {*/
+/*    display: inline;*/
+/*}*/
+
+/*!* Navigation link styling *!*/
+/*nav ul li a{*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    font-size: 1.4em;*/
+/*    font-family: Inria Sans, sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/* Main content container */
+/*.main-root{*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/* Home section container styling */
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    position: relative;
+    text-align: center;
+    align-items: end;
+    margin: 80px 47px;
+}
+
+/*@media all and (max-width: 768px) {*/
+
+/*    .homeContainer {*/
+/*        flex-direction: column-reverse;*/
+/*        align-items: center;*/
+/*        gap: 80px;*/
+/*    }*/
+
+/*    body > :nth-child(2) h4 {*/
+/*    font-size: 1.2rem;*/
+
+/*}*/
+
+/*}*/
+
+
+/*@media all and (max-width: 1024px) {*/
+
+/*    .homeContainer {*/
+/*        column-gap: 70px;*/
+/*    }*/
+/*}*/
+/* Styling for the text content in home section */
+/*.homeContainer >div:first-child{*/
+/*    position: relative;*/
+/*    left: 150px;*/
+/*    top: 100px;*/
+/*}*/
+
+/* Main heading in home section */
+.homeContainer >div:first-child > h1{
+    position: relative;
+    font-family: Inter, sans-serif;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+/*!* Name highlight with special color *!*/
+/*.name{*/
+/*    background: linear-gradient(to right, #4cc9f0, #4361ee);*/
+/*    background-clip: text;*/
+/*    color: transparent;*/
+/*}*/
+
+/*!* Subtitle in home section *!*/
+/*.homeContainer >div:first-child > h2{*/
+/*    position: relative;*/
+/*    font-family: Inter, serif;*/
+/*    color: #64748b;*/
+/*    font-size: 28px;*/
+/*    font-weight: bolder;*/
+/*    top: -32px;*/
+
+/*}*/
+
+/*!* Tagline styling below home section *!*/
+/*body > :nth-child(2) h4 {*/
+/*    text-align: center;*/
+/*    font-size: 1.1rem;*/
+/*    font-family: 'Inter', sans-serif;*/
+/*    color: white;*/
+/*    position: relative;*/
+/*    bottom: -18px;*/
+/*}*/
+
+/*!* Social media links container *!*/
+/*#socialImage{*/
+/*    position: relative;*/
+/*    background: gray;*/
+/*    padding: 14px 57px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 16px;*/
+/*    border-radius: 24px;*/
+/*}*/
+
+/*!* More about me text with gradient *!*/
+/*.homeContainer >div:first-child > h3{*/
+/*    background: linear-gradient(to right,rgba(145, 85, 76, 1),rgba(24, 97, 137, 1));*/
+/*    color: transparent;*/
+/*    background-clip: text; !* Text gradient effect *!*/
+/*    font-family: Inter, serif;*/
+/*    font-size: 30px;*/
+/*}*/
+
+/*!* Profile picture container *!*/
+/*#profilePic{*/
+/*    position: relative;*/
+/*}*/
+
+/*!* Profile picture styling with elliptical clip path *!*/
+/*#profilePic img {*/
+/*    clip-path: ellipse(44% 50%); !* Creates oval shape for profile pic *!*/
+/*    width: 540px;*/
+/*    height: 520px;*/
+/*    object-fit: contain;*/
+/*}*/
+
+/*!* Inner circle behind profile picture *!*/
+/*.circle{*/
+/*    width: 445px;*/
+/*    height: 445px;*/
+/*    background: linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));*/
+/*    border-radius: 50%;*/
+/*    position: absolute;*/
+/*    margin-top: -452px;*/
+/*    margin-left: 46px;*/
+/*    z-index: -1;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/* Outer blurred circle behind profile picture */
+/*.backCircle{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    background: linear-gradient(to right, rgba(37, 89, 121, 1), rgba(30, 38, 51, 1));*/
+/*    border-radius: 50%;*/
+/*    position: absolute;*/
+/*    margin-top: -479px;*/
+/*    margin-left: 19px;*/
+/*    z-index: -2;*/
+/*    filter: blur(19px); !* Adds glow effect *!*/
+/*}*/

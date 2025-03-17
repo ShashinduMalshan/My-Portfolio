@@ -16,6 +16,7 @@ body{
     width: fit-content;
 }
 
+
 /* Header styling - fixed at top with transparent background */
 header{
     /*scroll-snap-align: start;*/
@@ -101,6 +102,7 @@ nav ul li a{
 
     .homeContainer {
         column-gap: 70px;
+
     }
 }
 /* Styling for the text content in home section */
@@ -250,127 +252,168 @@ body > :nth-child(2) h4 {
     color: white;
 }
 
-/* Skills section heading */
-#mySkill > h1{
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-    text-align: center;
-    position: relative;
-    padding-bottom: 20px;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    line-height: 1.6;
-}
 
-/* Skills section container */
-.skills{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
-.skillContext{
-    background: rgba(15, 23, 42, 0.8);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin: 0 52px;
-    padding: 0 25px;
-}
 
-/* Skill context section headings */
-.skillContext > h3{
-    background: linear-gradient(to right,rgba(255, 252, 252, 1),rgba(115, 115, 115, 1));
-    color: transparent;
-    background-clip: text;
-    text-align: center;
-    position: relative;
-    font-family: Inter, serif;
-    font-size: 32px;
-    font-weight: bold;
-    top: 0;
-}
 
-/* Technical skills icons grid */
-#PlatformImages {
-    display: grid;
-    position: relative;
-    grid-template-columns: auto auto auto;
-    gap: 90px;
-    column-gap: 0;
-    place-items: center;
-    top: 150px;
-}
+        /* Skills Section Styling */
+        #mySkill {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
 
-/* Tech skill icon size */
-#PlatformImages img{
-    width: 62px;
-    height: 62px;
-}
+        #mySkill h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #f1f5f9;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
 
-/* Individual technology icon container */
-.icon-item{
-    text-align: center;
-    font-family: Inter, serif;
-    font-size: 20px;
-    font-weight: bold;
-    background: gray;
-    border-radius: 50%;
-    opacity: 0.8;
-    width: 103px;
-    height: 100px;
-    color: white;
-}
 
-/* Technology name text */
-.icon-item p {
-    margin-top: 21px;
-}
 
-/* Technology icon positioning */
-.icon-item img {
-    margin-top: 18px;
-}
+        /* Skills Container */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
 
-/* Skill card headings */
-.skills h4{
-    text-align: center;
-    font-family: Koulen, sans-serif;
-}
+        /* Skills Context Sections */
+        .skillContext {
+            background-color: rgba(30, 41, 59, 0.6);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
 
-/* Skill card description text */
-.skills p{
-    text-align: center;
-    padding: 15px 15px
-}
+        }
 
-/* Professional skill card styling */
-.skillCard{
-    background: gray;
-    border-radius: 38px;
-    height: 278px;
-    overflow: auto;
-}
+        .skillContext h3 {
+            font-size: 1.8rem;
+    color: #cbd5e1;  /* Silver white */
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
 
-/* Professional skills grid layout */
-.card{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 58px;
-    width: auto;
-    margin: 52px;
-}
 
-/* Responsive layout for smaller screens */
-@media all and (max-width: 1410px){
-    .skills{
-        grid-template-columns: repeat(1, 1fr);
-        height: fit-content;
-    }
 
-    .skillContext {
-        height: 801px;
-    }
-}
+        /* Technical Skills Icons */
+        #PlatformImages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+            width: 80px;
+        }
+
+        .icon-item img {
+            margin-bottom: 10px;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+        }
+
+        .icon-item p {
+            font-weight: 500;
+            color: #cbd5e1;
+        }
+
+        /* Professional Skills Cards */
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr);
+            gap: 29px;
+            margin-top: 20px;
+        }
+
+        .skillCard {
+            background-color: rgba(15, 23, 42, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-left: 4px solid #6366f1;
+            height: 100%;
+            box-sizing: border-box;
+
+        }
+
+       .skillCard:nth-child(2) {
+            border-left-color: #8b5cf6;
+        }
+
+        .skillCard:nth-child(3) {
+            border-left-color: #ec4899;
+        }
+
+        .skillCard:nth-child(4) {
+            border-left-color: #14b8a6;
+        }
+
+        .skillCard h4 {
+            font-size: 1.3rem;
+            color: #f1f5f9;
+            margin-bottom: 15px;
+        }
+
+        .skillCard p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                grid-template-columns: 1fr;
+            }
+
+            #PlatformImages {
+                gap: 20px;
+            }
+
+            .icon-item {
+                width: 70px;
+            }
+
+            #mySkill h1 {
+                font-size: 2rem;
+            }
+
+            .skillContext h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Projects section container */
 #myProject{

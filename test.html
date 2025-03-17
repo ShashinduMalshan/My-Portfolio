@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Skills Section Styling */
+        #mySkill {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        #mySkill h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        #mySkill h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            border-radius: 2px;
+        }
+
+        /* Skills Container */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        /* Skills Context Sections */
+        .skillContext {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .skillContext h3 {
+            font-size: 1.8rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .skillContext h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            border-radius: 2px;
+        }
+
+        /* Technical Skills Icons */
+        #PlatformImages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+            width: 80px;
+        }
+
+        .icon-item img {
+            margin-bottom: 10px;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        .icon-item p {
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        /* Professional Skills Cards */
+        .card {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .skillCard {
+            background-color: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #6366f1;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .skillCard:nth-child(2) {
+            border-left-color: #8b5cf6;
+        }
+
+        .skillCard:nth-child(3) {
+            border-left-color: #ec4899;
+        }
+
+        .skillCard:nth-child(4) {
+            border-left-color: #14b8a6;
+        }
+
+        .skillCard h4 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .skillCard p {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                grid-template-columns: 1fr;
+            }
+
+            #PlatformImages {
+                gap: 20px;
+            }
+
+            .icon-item {
+                width: 70px;
+            }
+
+            #mySkill h1 {
+                font-size: 2rem;
+            }
+
+            .skillContext h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="mySkill">
+        <h1>My Skills</h1>
+
+        <div class="skills">
+            <div class="skillContext">
+                <h3 id="Technical">Technical Skills</h3>
+
+                <div id="PlatformImages">
+                    <div class="icon-item">
+                        <img src="asset/icons8-html-48.png" width="48" height="48" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-css-100.png" width="48" height="48" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-javascript-48.png" width="48" height="48" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-java-48.png" width="48" height="48" alt="Java">
+                        <p>Java</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-python-48.png" width="48" height="48" alt="Python">
+                        <p>Python</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-react-80.png" width="48" height="48" alt="React">
+                        <p>React</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-figma-96.png" width="48" height="48" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <img src="asset/icons8-github-64.png" width="48" height="48" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillContext">
+                <h3>Professional Skills</h3>
+
+                <div class="card">
+                    <div class="skillCard" id="problemSolving">
+                        <h4>Problem Solving</h4>
+                        <p>I'm a logical and resourceful problem solver who enjoys breaking down challenges into smaller parts to find innovative and practical solutions. With a mix of creativity and critical thinking, I approach problems effectively, staying calm and focused under pressure.</p>
+                    </div>
+
+                    <div class="skillCard" id="logicalSkill">
+                        <h4>Logical Skills</h4>
+                        <p>I am a logical and resourceful problem solver who excels at analyzing complex challenges and breaking them into smaller, manageable parts. My approach combines creativity and critical thinking, ensuring practical solutions. I thrive in high-pressure situations, remaining calm and focused while applying logical reasoning to deliver efficient results.</p>
+                    </div>
+
+                    <div class="skillCard" id="designingSkill">
+                        <h4>Designing Skills</h4>
+                        <p>I blend creativity with functionality to design user-friendly and visually appealing solutions. My expertise spans UI/UX design, software architecture, and database design, focusing on usability and scalability. I am proficient in tools like Figma, Sketch, and Adobe XD, always aiming for high-quality designs that align with both user needs and business goals.</p>
+                    </div>
+
+                    <div class="skillCard" id="analyticalSkill">
+                        <h4>Analytical Skills</h4>
+                        <p>I possess strong analytical abilities, allowing me to assess situations, identify patterns, and make data-driven decisions. My approach involves breaking down complex data into actionable insights, which help inform strategies and solutions. I am skilled at interpreting trends, solving problems, and optimizing processes to improve efficiency and outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
