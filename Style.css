@@ -13,7 +13,7 @@
 /* Main background gradient for the entire page */
 body{
      background: linear-gradient( #0f172a 0%, #1e293b 100%);
-    width: fit-content;
+     width: fit-content;
 }
 
 
@@ -424,14 +424,13 @@ body > :nth-child(2) h4 {
 
 /* Projects section heading */
 #myProjectHeader h1{
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
     position: relative;
-    background: linear-gradient(to right,rgba(33, 108, 163, 1),rgba(180, 71, 71, 1));
-    color: transparent;
-    background-clip: text;
-    width: 228px;
-    font-family: Paytone One, sans-serif;
-    font-size: 44px;
-    padding-left: 45px;
+    padding-bottom: 20px;
+    color: white;
+
 }
 
 /* Project navigation arrows */
@@ -447,90 +446,75 @@ body > :nth-child(2) h4 {
 #project{
     position: relative;
     display: flex;
-    text-align: center;
-    padding: 24px;
-    place-content: center;
+    margin: 24px;
     gap: 30px;
-    height: 634px;
+    height: 560px;
 }
 
 /* Individual project card styling */
 .projectCards{
-    display: inline-block;
     position: relative;
-    background: gray;
-    width: 330px;
-    border-radius: 25px;
+    min-width: 300px;
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 331px;
+    height: 587px;
 }
 
-/* Special styling for specific project cards */
-#ticTacToe, #schoolManagementSystem{
-    margin-bottom: 19px;
-    margin-top: 19px;
-    width: 310px;
-}
 
 /* Project card images */
 .projectCards > img{
-    width: inherit;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
+.pro-info {
+    padding: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.pro-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+}
+.pro-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+
+}
 /* Project button positioning */
 .ProjectBtn{
     position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+    bottom: 0;
+    left: 25%;
+
 }
 
 /* Button styling */
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    background-color: #007bff;
-    border-radius: 12px;
+
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: #f8fafc;
     text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-/* Button hover effect */
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Button text styling */
-.btn-text {
-    margin-right: 10px;
-}
-
-/* Button icons container */
-.btn-icons img {
-    margin-left: 5px;
-}
-
-/* Arrow icon styling and animation setup */
-.arrow {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: -7px;
-    transition: transform 0.3s ease;
-}
-
-/* Arrow animation on button hover */
-.btn:hover .arrow {
-    transform: translateX(10px); /* Arrow moves to the right on hover */
-}
 
 
 
 /* Tagline styling below project section */
- #myProjectHeader h4 {
+ #myProjectHeader h4{
     text-align: center;
     font-size: 20px;
     font-family: Istok Web, serif;
