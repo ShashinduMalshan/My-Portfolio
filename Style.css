@@ -258,7 +258,7 @@ body > :nth-child(2) h4 {
 
         /* Skills Section Styling */
         #mySkill {
-            margin: 50px 180px;
+            margin: 50px auto;
             padding: 20px;
         }
 
@@ -576,7 +576,7 @@ body > :nth-child(2) h4 {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2 ,1fr);
     gap: 50px;
     align-items: center;
 }
@@ -633,40 +633,40 @@ body > :nth-child(2) h4 {
 }
 
 .form-group {
-            margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
         }
 
-        .form-control {
-            width: 100%;
-            padding: 15px 20px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(255, 255, 255, 0.05);
-            color: #f8fafc;
-            font-family: 'Inter', sans-serif;
-            transition: 0.3s;
-        }
 
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
 
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: #f8fafc;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .submit-btn {
-            width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            border: none;
-            background: linear-gradient(135deg, #4361ee, #3a0ca3);
-            color: #f8fafc;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        #socialImageInContact{
+#socialImageInContact{
     position: relative;
     background: gray;
     padding: 14px 57px;
@@ -675,9 +675,14 @@ body > :nth-child(2) h4 {
     align-items: center;
     gap: 16px;
     border-radius: 24px;
-            margin: 0 96px;
+    margin: 0 96px;
 }
 
 * {
     box-sizing: border-box;
 }
+
+@media all and (max-width: 1128px) {
+    .contact-container{
+        grid-template-columns: repeat(1, 1fr);
+    }}
