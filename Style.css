@@ -258,8 +258,7 @@ body > :nth-child(2) h4 {
 
         /* Skills Section Styling */
         #mySkill {
-            max-width: 1200px;
-            margin: 50px auto;
+            margin: 50px 180px;
             padding: 20px;
         }
 
@@ -542,7 +541,7 @@ body > :nth-child(2) h4 {
         height: 100%;
     }
     .projectCards{
-        height: 673px;
+        height: 615px;
     }
 
     #myProject i{
@@ -550,149 +549,12 @@ body > :nth-child(2) h4 {
     }
 }
 
-
-
-
-
-
-/* Contact section styling */
-#contact {
-    position: relative;
-    height: 100vh; /* Full viewport height */
-}
-
-/* Contact heading styling */
-#contactMe {
-    font-family: Paytone One, serif;
-    font-size: 44px;
-    margin-left: 309px; /* Left margin for positioning */
-    background: linear-gradient(to right, rgba(35, 130, 199, 1), rgba(180, 71, 71, 1)); /* Gradient background */
-    background-clip: text; /* Apply gradient to text */
-    color: transparent; /* Make text color transparent to show gradient */
-    width: 241px; /* Fixed width for the heading */
-}
-
-/* Contact paragraph styling */
-#contactPa {
-    color: white;
-    padding: 10px;
-    font-size: 19px;
-    width: 645px; /* Fixed width for the paragraph */
-    max-width: fit-content; /* Ensure it fits content */
-}
-
-/* Contact body heading styling */
-#contactBody h3 {
-    color: white;
-    font-size: 27px;
-    font-family: Orelega One, serif;
-}
-
-/* Contact body container styling */
-.contactBody {
-    margin: 19px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-    position: relative;
-    place-items: center; /* Center items horizontally and vertically */
-    height: 90vh; /* 90% of viewport height */
-}
-
-/* Contact text styling */
-.contactTxt {
+#contact{
+    padding: 100px 0;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
-    padding: 10px 20px;
-    border-radius: 8px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
 }
-
-/* Social media icons container in contact section */
-#socialImageInContact {
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto; /* Center horizontally */
-    background: gray;
-    width: 286px;
-    height: 71px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px; /* Space between icons */
-    border-radius: 24px;
-    opacity: 0.7; /* Semi-transparent background */
-}
-
-/* Input field styling */
-.placeholderNormal {
-    /* background: linear-gradient(to right, rgba(84, 149, 195), rgba(243, 243, 243)); */ /* Commented out gradient background */
-    width: 419px; /* Fixed width for input fields */
-    height: 39px; /* Fixed height for input fields */
-    border-radius: 30px; /* Rounded corners */
-    border-color: transparent; /* Transparent border */
-}
-
-/* Textarea styling */
-#placeholderNormalTxtArea {
-    width: 419px; /* Fixed width for textarea */
-    height: 209px; /* Fixed height for textarea */
-    border-radius: 30px; /* Rounded corners */
-    /* background: linear-gradient(to right, rgba(84, 149, 195, 1) 0%, rgba(243, 243, 243, 1) 100%); */ /* Commented out gradient background */
-    border-color: transparent; /* Transparent border */
-}
-
-/* Submit button styling */
-#msgBtn {
-    width: 100%; /* Full width of the container */
-    height: 42px; /* Fixed height for the button */
-    border-radius: 30px; /* Rounded corners */
-    position: relative;
-    border-color: transparent; /* Transparent border */
-    cursor: pointer; /* Pointer cursor on hover */
-    opacity: 0.6; /* Semi-transparent button */
-    transition: 0.3s; /* Smooth transition for hover effects */
-    font-size: 19px; /* Font size */
-    font-family: Paytone One, serif; /* Font family */
-}
-
-/* Responsive adjustments for contact section */
-@media all and (max-width: 1128px) {
-    /* Adjust contact body layout for smaller screens */
-    .contactBody {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Single-column layout */
-        grid-row-gap: 53px; /* Space between rows */
-    }
-
-    /* Adjust contact body container height */
-    .contactBodyContainer {
-        height: 100vh; /* Full viewport height */
-    }
-
-    /* Adjust message section height and alignment */
-    #MassageSection {
-        height: 100vh; /* Full viewport height */
-        align-content: center; /* Center content vertically */
-    }}
-
-    /*#msgBtn:hover {*/
-    /*    opacity: 1;*/
-    /*    transform: scale(1.1);*/
-
-
-    /*}*/
-
-    /*#contactBody{*/
-
-    /*    position: relative;*/
-    /*    left: 252px;*/
-    /*}*/
-
 
 
 
