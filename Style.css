@@ -664,10 +664,7 @@ body > :nth-child(2) h4 {
         }
 
 
-textarea.form-control {
-    min-height: 150px;
-    resize: vertical;
-}
+
 
 .submit-btn {
     width: 100%;
