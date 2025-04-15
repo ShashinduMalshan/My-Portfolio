@@ -701,6 +701,10 @@ body > :nth-child(2) h4 {
     }}
 
 
+
+
+
+/* Fade-in animation for page elements */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -710,7 +714,7 @@ body > :nth-child(2) h4 {
   }
 }
 
-
+/* Slide in from bottom animation */
 @keyframes slideInFromBottom {
   from {
     transform: translateY(50px);
@@ -722,7 +726,7 @@ body > :nth-child(2) h4 {
   }
 }
 
-
+/* Slide in from left animation */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-50px);
@@ -734,7 +738,7 @@ body > :nth-child(2) h4 {
   }
 }
 
-
+/* Slide in from right animation */
 @keyframes slideInFromRight {
   from {
     transform: translateX(50px);
@@ -746,7 +750,7 @@ body > :nth-child(2) h4 {
   }
 }
 
-
+/* Pulse animation for buttons and interactive elements */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -759,7 +763,7 @@ body > :nth-child(2) h4 {
   }
 }
 
-
+/* Subtle rotation animation for circle elements */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -769,19 +773,19 @@ body > :nth-child(2) h4 {
   }
 }
 
+/* Applying animations to specific elements */
 
-
-
+/* Header animation */
 header {
   animation: fadeIn 1s ease-out;
 }
 
-
+/* Name text highlight animation */
 .name {
   animation: pulse 3s infinite;
 }
 
-
+/* Profile picture animation */
 #profilePic img {
   animation: fadeIn 1.5s ease-out;
 }
@@ -794,12 +798,12 @@ header {
   animation: fadeIn 2s ease-out, rotate 60s linear infinite;
 }
 
-
+/* About section animation */
 .about-content {
   animation: slideInFromBottom 1s ease-out;
 }
 
-
+/* Skills section animations */
 #Technical {
   animation: slideInFromLeft 1s ease-out;
 }
@@ -813,7 +817,7 @@ header {
   transform: translateY(-10px);
 }
 
-
+/* Professional skills card animations */
 .skillCard {
   animation: slideInFromBottom 1s ease-out;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -824,7 +828,7 @@ header {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-
+/* Project card animations */
 .projectCards {
   animation: fadeIn 1.5s ease-out;
   transition: transform 0.3s ease;
@@ -834,7 +838,7 @@ header {
   transform: translateY(-8px);
 }
 
-
+/* Button hover animation */
 .btn {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -844,7 +848,7 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Contact form animations */
 .contact-info h3 {
   animation: slideInFromLeft 1s ease-out;
 }
@@ -862,7 +866,7 @@ header {
   transform: translateX(5px);
 }
 
-
+/* Form input animations */
 .form-control:focus {
   border-color: #4361ee;
   transform: translateY(-2px);
@@ -874,7 +878,7 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Social media icons animations */
 #socialImage a, #socialImageInContact a {
   transition: transform 0.3s ease;
 }
@@ -883,7 +887,7 @@ header {
   transform: translateY(-5px);
 }
 
-
+/* Menu item hover effects */
 nav ul li a {
   position: relative;
   transition: color 0.3s ease;
@@ -904,18 +908,29 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-
-
-#myProject i {
-  transition: transform 0.3s ease, color 0.3s ease;
+/* Project navigation arrows - opacity and animation */
+#myProject i.fa-circle-chevron-right {
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-#myProject i:hover {
-  transform: scale(1.2);
-  color: #4cc9f0 !important;
+#myProject i.fa-circle-chevron-right:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
+/* Left arrow (already rotated 180 degrees) */
+#myProject i.fa-circle-chevron-right.fa-rotate-180 {
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+#myProject i.fa-circle-chevron-right.fa-rotate-180:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Arrow bounce animation */
 @keyframes arrowBounce {
   0%, 100% {
     transform: translateX(0);
@@ -925,15 +940,16 @@ nav ul li a:hover::after {
   }
 }
 
+/* Apply subtle bounce animation to arrows */
 #myProject i:last-child {
   animation: arrowBounce 2s infinite;
 }
 
 #myProject i:first-child {
-  animation: arrowBounce 2s infinite reverse;
+  animation: arrowBounce 2s infinite;
 }
 
-
+/* Submit button animation */
 @keyframes buttonPulse {
   0% {
     box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.7);
@@ -950,6 +966,7 @@ nav ul li a:hover::after {
   animation: buttonPulse 2s infinite;
 }
 
+/* Staggered animations for skills icons */
 .icon-item:nth-child(1) { animation-delay: 0.1s; }
 .icon-item:nth-child(2) { animation-delay: 0.2s; }
 .icon-item:nth-child(3) { animation-delay: 0.3s; }
@@ -959,11 +976,13 @@ nav ul li a:hover::after {
 .icon-item:nth-child(7) { animation-delay: 0.7s; }
 .icon-item:nth-child(8) { animation-delay: 0.8s; }
 
+/* Staggered animations for skill cards */
 .skillCard:nth-child(1) { animation-delay: 0.1s; }
 .skillCard:nth-child(2) { animation-delay: 0.2s; }
 .skillCard:nth-child(3) { animation-delay: 0.3s; }
 .skillCard:nth-child(4) { animation-delay: 0.4s; }
 
+/* Staggered animations for project cards */
 .projectCards:nth-child(1) { animation-delay: 0.1s; }
 .projectCards:nth-child(3) { animation-delay: 0.2s; }
 .projectCards:nth-child(5) { animation-delay: 0.3s; }
