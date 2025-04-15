@@ -699,3 +699,271 @@ body > :nth-child(2) h4 {
     .contact-container{
         grid-template-columns: repeat(1, 1fr);
     }}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+header {
+  animation: fadeIn 1s ease-out;
+}
+
+
+.name {
+  animation: pulse 3s infinite;
+}
+
+
+#profilePic img {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.circle {
+  animation: fadeIn 1.8s ease-out;
+}
+
+.backCircle {
+  animation: fadeIn 2s ease-out, rotate 60s linear infinite;
+}
+
+
+.about-content {
+  animation: slideInFromBottom 1s ease-out;
+}
+
+
+#Technical {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.icon-item {
+  animation: fadeIn 1.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-10px);
+}
+
+
+.skillCard {
+  animation: slideInFromBottom 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.projectCards {
+  animation: fadeIn 1.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.projectCards:hover {
+  transform: translateY(-8px);
+}
+
+
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.contact-info h3 {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.contact-form {
+  animation: slideInFromRight 1s ease-out;
+}
+
+.contact-method {
+  animation: fadeIn 1.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateX(5px);
+}
+
+
+.form-control:focus {
+  border-color: #4361ee;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#socialImage a, #socialImageInContact a {
+  transition: transform 0.3s ease;
+}
+
+#socialImage a:hover, #socialImageInContact a:hover {
+  transform: translateY(-5px);
+}
+
+
+nav ul li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(to right, #4cc9f0, #4361ee);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+#myProject i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#myProject i:hover {
+  transform: scale(1.2);
+  color: #4cc9f0 !important;
+}
+
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+#myProject i:last-child {
+  animation: arrowBounce 2s infinite;
+}
+
+#myProject i:first-child {
+  animation: arrowBounce 2s infinite reverse;
+}
+
+
+@keyframes buttonPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(67, 97, 238, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(67, 97, 238, 0);
+  }
+}
+
+.submit-btn {
+  animation: buttonPulse 2s infinite;
+}
+
+.icon-item:nth-child(1) { animation-delay: 0.1s; }
+.icon-item:nth-child(2) { animation-delay: 0.2s; }
+.icon-item:nth-child(3) { animation-delay: 0.3s; }
+.icon-item:nth-child(4) { animation-delay: 0.4s; }
+.icon-item:nth-child(5) { animation-delay: 0.5s; }
+.icon-item:nth-child(6) { animation-delay: 0.6s; }
+.icon-item:nth-child(7) { animation-delay: 0.7s; }
+.icon-item:nth-child(8) { animation-delay: 0.8s; }
+
+.skillCard:nth-child(1) { animation-delay: 0.1s; }
+.skillCard:nth-child(2) { animation-delay: 0.2s; }
+.skillCard:nth-child(3) { animation-delay: 0.3s; }
+.skillCard:nth-child(4) { animation-delay: 0.4s; }
+
+.projectCards:nth-child(1) { animation-delay: 0.1s; }
+.projectCards:nth-child(3) { animation-delay: 0.2s; }
+.projectCards:nth-child(5) { animation-delay: 0.3s; }
