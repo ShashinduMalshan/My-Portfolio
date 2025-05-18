@@ -457,14 +457,32 @@
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script>
 
-     $('#send-btn').on('click', function() {
-    const phone = '94774832215'; // Use full international format (no leading 0)
-    const message = encodeURIComponent("Hello! I'm interested in your service.");
-    const url = `https://wa.me/${phone}?text=${message}`;
+    $('#send-btn').on('click', function () {
+    const phone = '94774832215'; // Sri Lankan number (no leading 0)
+
+    // Get form values
+    const name = $('#name').val().trim();
+    const email = $('#email').val().trim();
+    const subject = $('#subject').val().trim();
+    const message = $('#message').val().trim();
+
+
+    const fullMessage = `Contact Form Message\n\n` +
+                        `Name: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Subject: ${subject}\n` +
+                        `Message: ${message}`;
+
+
+    const encodedMessage = encodeURIComponent(fullMessage);
+
+
+    const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
 
     window.open(url, '_blank');
-    // <--!dawdata:application/json;base64,<KEY></KEY>-->
 });
+
 
 
     </script>
