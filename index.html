@@ -23,7 +23,7 @@
 
 </head>
 <body>
-        <header>
+    <header>
             <h1>ShasiDU MalshAN</h1>
             <nav>
                 <ul>
@@ -31,16 +31,16 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#mySkill">Skills</a></li>
                     <li><a href="#myProjectHeader">Projects</a></li>
+                    <li><a href="#assignments">Assignment</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="fa-solid fa-bars fa-2xl menu-btn" style="color: #ffffff;"></i>
             </nav>
         </header>
 
-
     <section class="main-root" id="home">
-                <span class="homeContainer">
-                    <div>
+        <span class="homeContainer">
+            <div>
                         <h1>Hi I'm <span class="name">Shasidu</span></h1>
                         <h2>A Software Engineer</h2>
 
@@ -78,32 +78,30 @@
                     </div>
 
                 </span>
-        <br><br>    <br><br>
+        <br><br><br><br>
 
 
         <h4>My experience combines coding and creativity to build solutions that stand out.</h4>
 
     </section>
-<br>
+    <br>
 
     <section id="about">
         <div class="about-container ">
 
             <h1>Who I am</h1>
-        <div class="about-content">
-            <p>Hi, I’m Shasidu Malshan, a passionate software engineering student at IJSE. I combine my enthusiasm
-                    for technology with a creative mindset, drawing from my diverse interests and dedication to learning.
-                    My expertise in software development and problem-solving enables me to craft innovative digital solutions
-                    that have a meaningful impact. I’m always eager to take on new challenges, explore groundbreaking ideas,
-                    and contribute to projects that inspire and drive change.</p>
+            <div class="about-content">
+                <p>Hi, I'm Shasidu Malshan, a passionate software engineering student at IJSE. I combine my enthusiasm
+                        for technology with a creative mindset, drawing from my diverse interests and dedication to learning.
+                        My expertise in software development and problem-solving enables me to craft innovative digital solutions
+                        that have a meaningful impact. I'm always eager to take on new challenges, explore groundbreaking ideas,
+                        and contribute to projects that inspire and drive change.</p>
+            </div>
         </div>
-</div>
+     </section>
 
-
-
-
-    </section>
     <br><br>
+
     <section id="mySkill">
 
         <h1>My Skill</h1><br>
@@ -171,7 +169,7 @@
 
                                 <h4>Problem Solving </h4>
 
-                                    <p>I’m a logical and resourceful problem solver
+                                    <p>I'm a logical and resourceful problem solver
                                         who enjoys breaking down challenges into smaller
                                         parts to find innovative and practical solutions.
                                         With a mix of creativity and critical thinking, I approach
@@ -223,7 +221,6 @@
         </span>
     </section>
     <br><br>
-
 
     <section id="myProjectHeader">
         <h1>My Project</h1><br>
@@ -313,10 +310,68 @@
     </section>
     <br><br>
 
+    <section id="assignments">
+        <h1>My Assignments</h1>
+        <div class="assignments-container">
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>CSS Assignment</h3>
+                <p>A collection of responsive web layouts and animations created using pure CSS.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-laptop-code fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>JavaScript Assignment</h3>
+                <p>Interactive web applications built with vanilla JavaScript and DOM manipulation.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-database fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>MySQL Assignment</h3>
+                <p>Database design and implementation projects using MySQL and SQL queries.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-brands fa-java fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>Java Assignment</h3>
+                <p>Object-oriented programming projects showcasing Java fundamentals and advanced concepts.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first responsive web design projects with modern UI/UX principles.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>API Integration</h3>
+                <p>RESTful API integration projects with front-end and back-end implementation.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
 
-
-        <div  class="contactBody" id="contactBody">
+    <section  class="contactBody" id="contactBody">
              <h1 id="contactMeTxt" >Contact Me</h1>
 
             <div class="contact-container">
@@ -389,18 +444,28 @@
                         <div class="form-group">
                             <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button id="send-btn" class="submit-btn">Send Message</button>
                     </form>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
     </section>
 
-<script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
 
-</script>
+     $('#send-btn').on('click', function() {
+    const phone = '94774832215'; // Use full international format (no leading 0)
+    const message = encodeURIComponent("Hello! I'm interested in your service.");
+    const url = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(url, '_blank');
+});
+
+
+    </script>
 </body>
 </html>

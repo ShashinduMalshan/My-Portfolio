@@ -1,4 +1,3 @@
-
 /*html {*/
 /*  scroll-snap-type: y mandatory;*/
 /*  scroll-behavior: smooth; !* Keep this here *!*/
@@ -986,3 +985,108 @@ nav ul li a:hover::after {
 .projectCards:nth-child(1) { animation-delay: 0.1s; }
 .projectCards:nth-child(3) { animation-delay: 0.2s; }
 .projectCards:nth-child(5) { animation-delay: 0.3s; }
+
+/* Assignments Section */
+#assignments {
+    padding: 4rem 2rem;
+}
+
+#assignments h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.assignments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.assignment-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.assignment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.assignment-card h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.assignment-card p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.assignment-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #2196F3, #00BCD4);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.assignment-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #00BCD4, #2196F3);
+}
+
+/* Media Queries for Assignments Section */
+@media screen and (max-width: 768px) {
+    #assignments {
+        padding: 3rem 1rem;
+    }
+
+    .assignments-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .assignment-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #assignments h1 {
+        font-size: 2rem;
+    }
+
+    .assignment-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .assignment-card p {
+        font-size: 0.9rem;
+    }
+}
