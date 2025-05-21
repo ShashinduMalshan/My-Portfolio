@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="lib/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/css/all.min.css">
 
 
@@ -26,12 +27,11 @@
     <header>
             <h1>ShasiDU MalshAN</h1>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#mySkill">Skills</a></li>
                     <li><a href="#myProjectHeader">Projects</a></li>
-                    <li><a href="#assignments">Assignment</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="fa-solid fa-bars fa-2xl menu-btn" style="color: #ffffff;"></i>
@@ -41,7 +41,7 @@
     <section class="main-root" id="home">
         <span class="homeContainer">
             <div>
-                        <h1>Hi I'm <span class="name">Shasidu</span></h1>
+                        <h1 id="heading">Hi I'm <span class="name">Shasidu</span></h1>
                         <h2>A Software Engineer</h2>
 
                         <div id="socialImage">
@@ -87,7 +87,7 @@
     <br>
 
     <section id="about">
-        <div class="about-container ">
+        <div data-aos="zoom-in" class="about-container ">
 
             <h1>Who I am</h1>
             <div class="about-content">
@@ -109,47 +109,47 @@
 
         <span class="skills">
 
-                <div class="skillContext">
+                <div class="skillContext" data-aos="zoom-out">
                     <h3 id="Technical">Technical Skill</h3>
 
                     <div id="PlatformImages">
 
-                        <div class="icon-item">
+                        <div data-aos="fade-right" class="icon-item">
                             <img src="asset/icons8-html-48.png" width="48" height="48" alt="HTML">
                             <p>HTML</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-right" class="icon-item">
                             <img src="asset/icons8-css-100.png" width="48" height="48" alt="CSS">
                             <p>CSS</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-right" class="icon-item">
                             <img src="asset/icons8-javascript-48.png" width="48" height="48" alt="JavaScript">
                             <p>JavaScript</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-right" class="icon-item">
                             <img src="asset/icons8-java-48.png" width="48" height="48" alt="Java">
                             <p>Java</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-left" class="icon-item">
                             <img src="asset/icons8-python-48.png" width="48" height="48" alt="Python">
                             <p>Python</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-left" class="icon-item">
                             <img src="asset/icons8-react-80.png" width="48" height="48" alt="React">
                             <p>React</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-left" class="icon-item">
                             <img src="asset/icons8-figma-96.png" width="48" height="48" alt="Figma">
                             <p>Figma</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div data-aos="fade-left" class="icon-item">
                             <img src="asset/icons8-github-64.png" width="48" height="48" alt="GitHub">
                                 <p>GitHub</p>
                             </div>
@@ -165,7 +165,7 @@
                     <h3>Professional Skill</h3><br>
 
                     <div class="card">
-                            <div class="skillCard" id="problemSolving">
+                            <div data-aos="fade-up" class="skillCard" id="problemSolving">
 
                                 <h4>Problem Solving </h4>
 
@@ -176,7 +176,7 @@
                                         problems effectively, staying calm and focused under pressure.</p>
                             </div>
 
-                            <div class="skillCard" id="logicalSkill">
+                            <div data-aos="fade-up" class="skillCard" id="logicalSkill">
 
                                 <h4>Logical Skills </h4>
 
@@ -189,7 +189,7 @@
 
                             </div>
 
-                            <div class="skillCard" id="designingSkill">
+                            <div data-aos="fade-down" class="skillCard" id="designingSkill">
 
                                 <h4>Designing Skills</h4>
 
@@ -203,7 +203,7 @@
 
                             </div>
 
-                            <div class="skillCard" id="analyticalSkill">
+                            <div data-aos="fade-down" class="skillCard" id="analyticalSkill">
 
                                 <h4>Analytical Skills </h4>
 
@@ -319,7 +319,9 @@
                 </div>
                 <h3>CSS Assignment</h3>
                 <p>A collection of responsive web layouts and animations created using pure CSS.</p>
-                <a href="#" class="assignment-btn">View Project</a>
+<!--                <a href="" class="assignment-btn">View Project</a>-->
+                <a href="#" class="assignment-btn" onclick="openDrivePopup('https://drive.google.com/drive/folders/1AEHVgMhq3CCjJ8jQUBkThBRlhdv3vo_Y?usp=sharing'); return false;">View Project</a>
+
             </div>
 
             <div class="assignment-card">
@@ -455,36 +457,81 @@
     </section>
 
     <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+
     <script>
+    $(document).ready(function() {
+        // Mobile menu functionality
+        $('.menu-btn').click(function() {
+            $('.nav-links').slideToggle(300);
+            $(this).toggleClass('fa-bars fa-xmark');
+        });
 
-    $('#send-btn').on('click', function () {
-    const phone = '94774832215'; // Sri Lankan number (no leading 0)
+        // Close menu when clicking outside
+        $(document).click(function(e) {
+            if (!$(e.target).closest('nav').length) {
+                $('.nav-links').slideUp(300);
+                $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+            }
+        });
 
-    // Get form values
-    const name = $('#name').val().trim();
-    const email = $('#email').val().trim();
-    const subject = $('#subject').val().trim();
-    const message = $('#message').val().trim();
-
-
-    const fullMessage = `Contact Form Message\n\n` +
-                        `Name: ${name}\n` +
-                        `Email: ${email}\n` +
-                        `Subject: ${subject}\n` +
-                        `Message: ${message}`;
-
-
-    const encodedMessage = encodeURIComponent(fullMessage);
-
-
-    const url = `https://wa.me/${phone}?text=${encodedMessage}`;
-
-
-    window.open(url, '_blank');
-});
+        // Close menu when clicking a link
+        $('.nav-links a').click(function() {
+            $('.nav-links').slideUp(300);
+            $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+        });
 
 
 
+        // Existing code...
+        $('#send-btn').on('click', function () {
+            const phone = '94774832215';
+            const name = $('#name').val().trim();
+            const email = $('#email').val().trim();
+            const subject = $('#subject').val().trim();
+            const message = $('#message').val().trim();
+            const fullMessage = `Contact Form Message\n\n` +
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Subject: ${subject}\n` +
+                `Message: ${message}`;
+            const encodedMessage = encodeURIComponent(fullMessage);
+            const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+            window.open(url, '_blank');
+        });
+
+        // Project cards animation
+        gsap.set(".projectCards", {
+            transformStyle: "preserve-3d",
+            transformOrigin: "center"
+        });
+
+        $(".projectCards").hover(
+            function () {
+                gsap.fromTo(this, { rotateY: 0 }, {
+                    rotateY: 360,
+                    duration: 0.6,
+                    ease: "power2.inOut"
+                });
+            },
+            function () {
+                gsap.to(this, {
+                    rotateY: 0,
+                    duration: 0.6,
+                    ease: "power2.inOut"
+                });
+            }
+        );
+    });
+
+    function openDrivePopup(url) {
+        window.open(url, 'driveWindow', 'width=800,height=600,resizable=yes,scrollbars=yes');
+    }
     </script>
 </body>
 </html>
