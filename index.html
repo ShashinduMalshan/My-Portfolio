@@ -225,7 +225,7 @@
     <section id="myProjectHeader">
         <h1>My Project</h1><br>
 
-        <div id="myProject">
+        <div data-aos="flip-up" id="myProject">
 
         <i class="fa-solid fa-chevron-circle-left fa-2xl" style="color: #ffffff;"></i>
 
@@ -312,7 +312,7 @@
 
     <section id="assignments">
         <h1>My Assignments</h1>
-        <div class="assignments-container">
+        <div data-aos="zoom-in" class="assignments-container">
             <div class="assignment-card">
                 <div class="assignment-icon">
                     <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
@@ -378,7 +378,7 @@
 
             <div class="contact-container">
 
-                <div class="contact-info">
+                <div data-aos="zoom-in-right" class="contact-info">
 
                         <h3>Let's Work Together</h3>
 
@@ -431,8 +431,8 @@
 
                             </div><br><br>
                 </div>
-
-                <div class="contact-form">
+<!--abc-->
+                <div data-aos="zoom-in-left" class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" placeholder="Your Name" >
@@ -465,7 +465,7 @@
 
 
     <script>
-  $(document).ready(function() {
+    $(document).ready(function() {
         // Mobile menu functionality
         $('.menu-btn').click(function() {
             $('.nav-links').slideToggle(300);
@@ -487,24 +487,40 @@
         });
 
 
-        // Existing code...
+
         $('#send-btn').on('click', function () {
             const phone = '94774832215';
             const name = $('#name').val().trim();
             const email = $('#email').val().trim();
             const subject = $('#subject').val().trim();
             const message = $('#message').val().trim();
+
+            // Simple email pattern
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill out all the fields.');
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
             const fullMessage = `Contact Form Message\n\n` +
                 `Name: ${name}\n` +
                 `Email: ${email}\n` +
                 `Subject: ${subject}\n` +
                 `Message: ${message}`;
+
             const encodedMessage = encodeURIComponent(fullMessage);
             const url = `https://wa.me/${phone}?text=${encodedMessage}`;
             window.open(url, '_blank');
         });
 
-        // Project cards animation
+
         gsap.set(".projectCards", {
             transformStyle: "preserve-3d",
             transformOrigin: "center"
