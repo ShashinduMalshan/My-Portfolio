@@ -43,7 +43,7 @@ header h1 {
 /* Navigation menu styling */
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex  !important;
     gap: 20px;
     margin: 0;
     padding: 10px;
@@ -79,11 +79,7 @@ nav ul li a{
     .menu-btn {
             display:block !important;
     }
-
-
-
-
-    }
+}
 
 
 
