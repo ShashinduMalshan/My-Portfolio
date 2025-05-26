@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5a2e9b6-d6f9-4123-83cb-ba70493595e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on style",
+    "git-widget-placeholder": "style",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/shasidu/Documents/ijse/myProject/My-Portfolio",
@@ -139,6 +139,13 @@
       <workItem from="1744703616021" duration="1007000" />
       <workItem from="1744704922279" duration="332000" />
       <workItem from="1747835506493" duration="1927000" />
+      <workItem from="1747845380816" duration="245000" />
+      <workItem from="1747882623154" duration="202000" />
+      <workItem from="1747882854877" duration="19000" />
+      <workItem from="1747926005994" duration="488000" />
+      <workItem from="1747958739221" duration="393000" />
+      <workItem from="1747970943286" duration="28000" />
+      <workItem from="1747971669629" duration="7000" />
     </task>
     <servers />
   </component>
