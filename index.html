@@ -464,84 +464,77 @@
   AOS.init();
 </script>
 
-<script>
-$(document).ready(function() {
-    gsap.registerPlugin(SplitText); // ✅ Register SplitText once loaded
+<!-- Load scripts in correct order -->
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
 
+<script src="lib/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function() {
     // Mobile menu functionality
     $('.menu-btn').click(function() {
-        $('.nav-links').slideToggle(300);
-        $(this).toggleClass('fa-bars fa-xmark');
+      $('.nav-links').slideToggle(300);
+      $(this).toggleClass('fa-bars fa-xmark');
     });
 
     $(document).click(function(e) {
-        if (!$(e.target).closest('nav').length) {
-            $('.nav-links').slideUp(300);
-            $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
-        }
+      if (!$(e.target).closest('nav').length) {
+        $('.nav-links').slideUp(300);
+        $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+      }
     });
 
     $('.nav-links a').click(function() {
-        $('.nav-links').slideUp(300);
-        $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+      $('.nav-links').slideUp(300);
+      $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
     });
 
+    // Contact form send button
     $('#send-btn').on('click', function () {
-        const phone = '94774832215';
-        const name = $('#name').val().trim();
-        const email = $('#email').val().trim();
-        const subject = $('#subject').val().trim();
-        const message = $('#message').val().trim();
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phone = '94774832215';
+      const name = $('#name').val().trim();
+      const email = $('#email').val().trim();
+      const subject = $('#subject').val().trim();
+      const message = $('#message').val().trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (!name || !email || !subject || !message) {
-            alert('Please fill out all the fields.');
-            return;
-        }
+      if (!name || !email || !subject || !message) {
+        alert('Please fill out all the fields.');
+        return;
+      }
 
-        if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
 
-        const fullMessage = `Contact Form Message\n\n` +
-            `Name: ${name}\n` +
-            `Email: ${email}\n` +
-            `Subject: ${subject}\n` +
-            `Message: ${message}`;
+      const fullMessage = `Contact Form Message\n\n` +
+          `Name: ${name}\n` +
+          `Email: ${email}\n` +
+          `Subject: ${subject}\n` +
+          `Message: ${message}`;
 
-        const encodedMessage = encodeURIComponent(fullMessage);
-        const url = `https://wa.me/${phone}?text=${encodedMessage}`;
-        window.open(url, '_blank');
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+      window.open(url, '_blank');
     });
 
-    // Card hover animation
-    gsap.set(".projectCards", {
-        transformStyle: "preserve-3d",
-        transformOrigin: "center"
-    });
-
+    // Simple card hover effect with jQuery (no rotation)
     $(".projectCards").hover(
-        function () {
-            gsap.fromTo(this, { rotateY: 0 }, {
-                rotateY: 360,
-                duration: 0.6,
-                ease: "power2.inOut"
-            });
-        },
-        function () {
-            gsap.to(this, {
-                rotateY: 0,
-                duration: 0.6,
-                ease: "power2.inOut"
-            });
-        }
+      function () {
+        $(this).css('box-shadow', '0 8px 16px rgba(0,0,0,0.3)');
+      },
+      function () {
+        $(this).css('box-shadow', 'none');
+      }
     );
-});
+  });
 
-function openDrivePopup(url) {
+  function openDrivePopup(url) {
     window.open(url, 'driveWindow', 'width=800,height=600,resizable=yes,scrollbars=yes');
-}
+  }
 </script>
 
 </body>
