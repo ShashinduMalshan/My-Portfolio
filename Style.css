@@ -11,7 +11,7 @@
 
 /* Main background gradient for the entire page */
 body{
-     background: linear-gradient( #0f172a 0%, #1e293b 100%);
+     /*background: linear-gradient( #0f172a 0%, #1e293b 100%);*/
      width: fit-content;
      overflow-x: hidden;
 }
@@ -107,7 +107,7 @@ nav ul li a{
     }
 
     body > :nth-child(2) h4 {
-    font-size: 1.2rem;
+    font-size: 1.2rem;!important;
 
 }
 
@@ -156,7 +156,7 @@ nav ul li a{
 }
 
 /* Tagline styling below home section */
-body > :nth-child(2) h4 {
+#belowHomeSection {
     text-align: center;
     font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
