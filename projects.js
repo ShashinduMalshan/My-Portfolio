@@ -1,5 +1,7 @@
     document.addEventListener('DOMContentLoaded', () => {
-          if (window.innerWidth < 768) {
+
+        if (window.innerWidth < 768) {
+
               const carousel = document.getElementById('carousel');
               const myProjectHeader = document.getElementById('projectsBody');
               const cards = carousel.querySelectorAll('.projectCards');
@@ -124,4 +126,4 @@
                   }
               });
           }
-    });
+            });
