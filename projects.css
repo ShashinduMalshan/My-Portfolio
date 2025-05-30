@@ -1,0 +1,185 @@
+
+        #myProjectHeader {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            padding: 20px 0;
+        }
+        #myProjectHeader h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        #myProjectHeader h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            border-radius: 2px;
+        }
+        #myProjectHeader h4 {
+            font-size: 20px;
+            font-family: 'Istok Web', serif;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-style: italic;
+            font-weight: 400;
+            margin-top: 20px;
+            position: relative;
+            top: 100%; /* Place below carousel */
+            margin-bottom: 40px;
+        }
+
+        #carousel {
+          transform-style: preserve-3d;
+          transition: transform 0.1s linear;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            transform-style: preserve-3d;
+            animation: rotate 20s linear infinite;
+            margin: 87px auto 0 auto;
+        }
+        .carousel-container:hover {
+            animation-play-state: paused;
+        }
+        @keyframes rotate {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+        .projectCards {
+            position: absolute;
+            width: 300px;
+            height: 500px;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            transform-origin: center;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .projectCards img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .pro-info {
+            padding: 20px;
+            color: white;
+            height: calc(100% - 180px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .pro-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #ffffff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pro-info p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .ProjectBtn {
+            display: flex;
+            justify-content: center;
+        }
+        .btn {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        .btn:hover::before {
+            left: 100%;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(67, 97, 238, 0.4);
+        }
+
+
+         @media (max-width: 768px) {
+
+            body {
+                padding-top: 60px; /* Adjust for smaller header */
+            }
+            #myProjectHeader {
+                padding: 15px 0;
+            }
+
+            .carousel-container {
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 30px;
+                padding: 10px;
+                scroll-behavior: smooth;
+                animation: none;
+                align-items: center;
+                margin: 20px auto;
+            }
+            .projectCards {
+                position: relative;
+                transform: none !important;
+                flex: 0 0 300px;
+                margin: 10px 0;
+                scroll-snap-align: start;
+                opacity: 1 !important;
+                width: 90%;
+                max-width: 350px;
+                left: auto;
+            }
+            #myProjectHeader h1 {
+                font-size: 2rem;
+            }
+            #myProjectHeader h4 {
+                font-size: 18px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+            }
+        }

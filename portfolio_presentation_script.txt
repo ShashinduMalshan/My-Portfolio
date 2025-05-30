@@ -1,0 +1,80 @@
+Web Technologies - HDSE 71 - Panadura - Shasidu Malshan - IJSE
+Portfolio Website Presentation Script
+
+[Hook - 15 seconds]
+"Creating something that's both functional and visually appealing isn't easy—but that's exactly what I aimed for.
+"I'm Shasidu Malshan from HDSE 71 at IJSE Panadura. 
+I’m excited to present my portfolio website, which highlights my skills and projects as a software engineer."
+
+[Overview - 1 minute]
+"This portfolio website is built using modern web technologies including:
+- HTML5 for structure
+- CSS3 for styling and animations
+- JavaScript for interactivity
+- jQuery for enhanced functionality
+- GSAP for advanced animations
+- Font Awesome for icons
+The website is fully responsive and features a modern, professional design."
+
+[Key Features - 2 minutes]
+
+1. Navigation and Header
+"Let me start by showing you the navigation system. The website features a clean, 
+responsive navigation bar that adapts to different screen sizes. On mobile devices,
+ it transforms into a hamburger menu for better usability."
+
+2. Home Section
+"The home section introduces me with a professional profile picture and a brief introduction. 
+It includes social media links for LinkedIn, GitHub, Instagram, and Twitter, making it easy for visitors to connect with me."
+
+3. About Section
+"The about section provides a detailed overview of my background, skills, and professional interests. 
+It's designed with a clean, modern layout that makes the information easily digestible."
+
+4. Skills Section
+"Moving to the skills section, I've divided it into two main categories:
+- Technical Skills: Showcasing my proficiency in HTML, CSS, JavaScript, Java, Python, React, Figma, and GitHub
+- Professional Skills: Highlighting my problem-solving abilities, logical thinking, design skills, and analytical capabilities"
+
+5. Projects Section
+"The projects section features three main projects:
+- Tic Tac Toe Game: A JavaScript-based game with AI opponent
+- Vehicle License Point System: A comprehensive traffic violation management system
+- School Management System: A full-stack application for educational institutions
+Each project includes a description and a link to its GitHub repository. 
+Additionally, you can visit my GitHub profile to explore more of my projects, 
+including Java applications like POS systems, Python projects for data analysis and automation, 
+and various other web applications that demonstrate my full range of development skills across multiple programming languages."
+
+6. Assignments Section
+"The assignments section displays six different assignments, each representing different aspects of web development and programming.
+ The cards feature smooth animations and hover effects for better user engagement."
+
+7. Contact Section
+"Finally, the contact section includes:
+- A professional contact form with validation
+- Direct contact information
+- Social media links
+- A WhatsApp integration for instant communication"
+
+[Technical Highlights - 1 minute]
+"Some technical highlights of the website include:
+- Responsive design that works on all devices
+- Smooth animations using GSAP
+- Form validation using JavaScript
+- Modern glass-morphism design elements
+- Optimized performance and loading times
+- Cross-browser compatibility"
+
+[Conclusion - 30 seconds]
+"This portfolio website effectively represents my skills and projects while providing a professional platform for potential
+ employers or clients to learn more about my work. The design is modern, user-friendly, and showcases my abilities as a web developer."
+
+[Closing]
+"Thank you for watching this presentation. You can find the live website at [your website URL] and the source code on my GitHub profile. 
+I'm open to any questions or feedback you might have."
+
+[YouTube Description]
+This video presents my personal portfolio website developed as part of the Web Technologies module at IJSE. The portfolio showcases my skills, projects, and professional experience as a software engineer. Built using HTML5, CSS3, JavaScript, and modern web technologies, the website features a responsive design, interactive elements, and smooth animations. The presentation covers the website's key features, technical implementation, and design choices.
+
+#WebDevelopment #Portfolio #IJSE #HDSE71 #WebTechnologies #SoftwareEngineering #JavaDeveloper #PythonDeveloper #FullStackDeveloper #FrontEndDevelopment #BackEndDevelopment #WebDesign #ResponsiveDesign #JavaScript #HTML5 #CSS3 #jQuery #GSAP #GitHub #Coding #Programming #SoftwareDevelopment #TechPortfolio #DeveloperPortfolio #IJSEPanadura #StudentProject #WebDev #CodeNewbie #TechStudent #ProgrammingLife 

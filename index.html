@@ -8,299 +8,669 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, web development, web design, front-end development,
      back-end development, full-stack development, UI/UX design, responsive design, personal website, portfolio, coding,
       programming, software development, SEO, digital marketing, website optimization">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Shasidu Malshan">
     <meta name="subject" content="Shasidu Malshan - Web Developer & Software Engineer Portfolio">
     <meta name="copyright" content="© 2024 Shasidu Malshan. All Rights Reserved.">
+ <!--<meta http-equiv="refresh" content="1;URL=http://localhost:63342/My-Portfolio/index.html?_ijt=r94tgub9dbj6fbu55r8ep3g22s&_ij_reload=RELOAD_ON_SAVE">-->
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="Background.css">
+    <link rel="stylesheet" href="projects.css">
 
 
-    <!--   <meta http-equiv="refresh" content="5;URL=https://example.com/new-page">-->
+    <title>Shasidu Malshan | Software Engineer</title>
 
-
-    <title>shasidu malshan</title>
 </head>
 <body>
-    <header id="header">
+<div class="background-container" id="bg-spiral"></div>
 
-        <nav>
-        <STRONG>ShasiDU MalshAN</STRONG>
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#myProject">Project</a>
-            <a href="#mySkill">Skill</a>
-            <a href="#contactMe">Contact</a>
-
-        </nav>
-
-    </header>
+    <header>
+            <h1>ShasiDU MalshAN</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mySkill">Skills</a></li>
+                    <li><a href="#myProjectHeader">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars fa-2xl menu-btn" style="color: #ffffff;"></i>
+            </nav>
+        </header>
 
     <section class="main-root" id="home">
-        <h1>Hi I'm Shasidu </h1>
-        <h2>A Software Engineer  </h2>
-        <h4>My experience combines coding and creativity to build solutions that stand out.</h4>
+        <span class="homeContainer">
+            <div>
+                        <h1 id="heading">Hi I'm <span class="name">Shasidu</span></h1>
+                        <h2>A Software Engineer</h2>
 
-        <div id="socialImage">
-
-
-            <a href="https://www.linkedin.com/in/shasidu-malshan-5978bb222/" target="_blank">
-                <img src="asset/icons8-linkedin-50.png" width="50"  height="50" alt="linkedin">
-            </a>
-
-            <a href="https://github.com/ShashinduMalshan" target="_blank">
-                <img src="asset/icons8-github-64.png" width="50"  height="50" alt="gitHub">
-            </a>
-
-            <a href="https://www.instagram.com/malshan_shasidu/" target="_blank">
-                <img src="asset/icons8-instagram-logo-64.png" width="50"  height="50" alt="instagram">
-            </a>
-
-            <a href="https://x.com/ShasiduM55723" target="_blank">
-                <img src="asset/icons8-x-50.png" width="50"  height="50" alt="x">
-            </a>
+                        <div id="socialImage">
 
 
-        </div>
-        <h3>More about me</h3>
+                            <a href="https://www.linkedin.com/in/shasidu-malshan-5978bb222/" target="_blank">
+                                <img src="asset/icons8-linkedin-50.png" width="54"  height="51" alt="linkedin">
+                            </a>
+
+                            <a href="https://github.com/ShashinduMalshan" target="_blank">
+                                <img src="asset/icons8-github-64.png" width="54"  height="51" alt="gitHub">
+                            </a>
+
+                            <a href="https://www.instagram.com/malshan_shasidu/" target="_blank">
+                                <img src="asset/icons8-instagram-logo-64.png" width="54"  height="51" alt="instagram">
+                            </a>
+
+                            <a href="https://x.com/ShasiduM55723" target="_blank">
+                                <img src="asset/icons8-x-50.png" width="54"  height="51" alt="x">
+                            </a>
+
+
+                        </div>
+                        <h3>More about me</h3>
+
+                    </div>
+
+                    <div id="profilePic">
+                        <img src="asset/img.png" alt="profile pic" width="90" height="150">
+                        <div class="circle"></div>
+                        <div class="backCircle"></div>
+                        <div class="arm arm-1"></div>
+                        <div class="arm arm-2"></div>
+                        <div class="arm arm-3"></div>
+                    </div>
+
+                </span>
+        <br><br><br><br>
+
+
+        <h4 id="belowHomeSection">My experience combines coding and creativity to build solutions that stand out.</h4>
 
     </section>
-<br>
+    <br>
 
     <section id="about">
+        <div data-aos="zoom-in" class="about-container ">
 
-        <h1>Who I am</h1>
-            <div id="aboutMe">
-                <p>Hi, I’m Shasidu Malshan, a passionate software engineering student at IJSE. I combine my enthusiasm
-                    for technology with a creative mindset, drawing from my diverse interests and dedication to learning.
-                    My expertise in software development and problem-solving enables me to craft innovative digital solutions
-                    that have a meaningful impact. I’m always eager to take on new challenges, explore groundbreaking ideas,
-                    and contribute to projects that inspire and drive change.</p>
-
-                <div id="profilePic">
-                    <img src="asset/20250130_122741.png" alt="profile pic" width="90" height="150">
-                </div>
-
+            <h1>Who I am</h1>
+            <div class="about-content">
+                <p>Hi, I'm Shasidu Malshan, a passionate software engineering student at IJSE. I combine my enthusiasm
+                        for technology with a creative mindset, drawing from my diverse interests and dedication to learning.
+                        My expertise in software development and problem-solving enables me to craft innovative digital solutions
+                        that have a meaningful impact. I'm always eager to take on new challenges, explore groundbreaking ideas,
+                        and contribute to projects that inspire and drive change.</p>
             </div>
-    </section>
+        </div>
+     </section>
+
     <br><br>
+
     <section id="mySkill">
 
         <h1>My Skill</h1><br>
 
-        <h3>Technical Skill</h3><br>
 
-        <div id="PlatformImages">
+        <span class="skills">
 
-            <img src="asset/icons8-html-48.png" width="48" height="48" alt="html">
-            <img src="asset/icons8-css-100.png" width="48" height="48" alt="css">
-            <img src="asset/icons8-javascript-48.png" width="48" height="48" alt="javaScript">
-            <img src="asset/icons8-java-48.png" width="48" height="48" alt="java">
-            <img src="asset/icons8-python-48.png" width="48" height="48" alt="python">
-            <img src="asset/icons8-react-80.png" width="48" height="48" alt="react">
-            <img src="asset/icons8-figma-96.png" width="48" height="48" alt="figma">
-            <img src="asset/icons8-github-64.png" width="48" height="48" alt="github">
+                <div class="skillContext" data-aos="zoom-out">
+                    <h3 id="Technical">Technical Skill</h3>
 
-        </div>
-<br><br>
-        <h3>Professional Skill</h3><br>
+                    <div id="PlatformImages">
 
-        <div id="problemSolving">
+                        <div data-aos="fade-right" class="icon-item">
+                            <img src="asset/icons8-html-48.png" width="48" height="48" alt="HTML">
+                            <p>HTML</p>
+                        </div>
 
-            <h4>Problem Solving </h4>
+                        <div data-aos="fade-right" class="icon-item">
+                            <img src="asset/icons8-css-100.png" width="48" height="48" alt="CSS">
+                            <p>CSS</p>
+                        </div>
 
-                <p>I’m a logical and resourceful problem solver
-                    who enjoys breaking down challenges into smaller
-                    parts to find innovative and practical solutions.
-                    With a mix of creativity and critical thinking, I approach
-                    problems effectively, staying calm and focused under pressure.</p>
-        </div>
+                        <div data-aos="fade-right" class="icon-item">
+                            <img src="asset/icons8-javascript-48.png" width="48" height="48" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
 
-        <div id="logicalSkill">
+                        <div data-aos="fade-right" class="icon-item">
+                            <img src="asset/icons8-java-48.png" width="48" height="48" alt="Java">
+                            <p>Java</p>
+                        </div>
 
-            <h4>Logical Skills </h4>
+                        <div data-aos="fade-left" class="icon-item">
+                            <img src="asset/icons8-python-48.png" width="48" height="48" alt="Python">
+                            <p>Python</p>
+                        </div>
 
-                    <p>I am a logical and resourceful problem solver who excels at analyzing
-                        complex challenges and breaking them into smaller, manageable parts.
-                        My approach combines creativity and critical thinking, ensuring practical
-                        solutions. I thrive in high-pressure situations, remaining calm and
-                        focused while applying logical reasoning to deliver efficient results.</p>
+                        <div data-aos="fade-left" class="icon-item">
+                            <img src="asset/icons8-react-80.png" width="48" height="48" alt="React">
+                            <p>React</p>
+                        </div>
 
+                        <div data-aos="fade-left" class="icon-item">
+                            <img src="asset/icons8-figma-96.png" width="48" height="48" alt="Figma">
+                            <p>Figma</p>
+                        </div>
 
-        </div>
+                        <div data-aos="fade-left" class="icon-item">
+                            <img src="asset/icons8-github-64.png" width="48" height="48" alt="GitHub">
+                                <p>GitHub</p>
+                            </div>
 
-        <div id="designingSkill">
+                    </div>
 
-            <h4>Designing Skills</h4>
-
-                    <p>I blend creativity with functionality to design user-friendly
-                        and visually appealing solutions. My expertise spans UI/UX design,
-                        software architecture, and database design, focusing on usability and
-                        scalability. I am proficient in tools like Figma, Sketch, and Adobe XD,
-                        always aiming for high-quality designs that align with both user needs and
-                        business goals.</p>
-
-
-        </div>
-
-        <div id="analyticalSkill">
-
-            <h4>Analytical Skills </h4>
-
-                    <p>I possess strong analytical abilities,
-                        allowing me to assess situations, identify patterns,
-                        and make data-driven decisions. My approach involves breaking
-                        down complex data into actionable insights, which help inform
-                        strategies and solutions. I am skilled at interpreting
-                        trends, solving problems, and optimizing processes
-                        to improve efficiency and outcomes.</p>
+                </div>
 
 
-        </div>
 
+                <div class="skillContext">
+
+                    <h3>Professional Skill</h3><br>
+
+                    <div class="card">
+                            <div data-aos="fade-up" class="skillCard" id="problemSolving">
+
+                                <h4>Problem Solving </h4>
+
+                                    <p>I'm a logical and resourceful problem solver
+                                        who enjoys breaking down challenges into smaller
+                                        parts to find innovative and practical solutions.
+                                        With a mix of creativity and critical thinking, I approach
+                                        problems effectively, staying calm and focused under pressure.</p>
+                            </div>
+
+                            <div data-aos="fade-up" class="skillCard" id="logicalSkill">
+
+                                <h4>Logical Skills </h4>
+
+                                        <p>I am a logical and resourceful problem solver who excels at analyzing
+                                            complex challenges and breaking them into smaller, manageable parts.
+                                            My approach combines creativity and critical thinking, ensuring practical
+                                            solutions. I thrive in high-pressure situations, remaining calm and
+                                            focused while applying logical reasoning to deliver efficient results.</p>
+
+
+                            </div>
+
+                            <div data-aos="fade-down" class="skillCard" id="designingSkill">
+
+                                <h4>Designing Skills</h4>
+
+                                        <p>I blend creativity with functionality to design user-friendly
+                                            and visually appealing solutions. My expertise spans UI/UX design,
+                                            software architecture, and database design, focusing on usability and
+                                            scalability. I am proficient in tools like Figma, Sketch, and Adobe XD,
+                                            always aiming for high-quality designs that align with both user needs and
+                                            business goals.</p>
+
+
+                            </div>
+
+                            <div data-aos="fade-down" class="skillCard" id="analyticalSkill">
+
+                                <h4>Analytical Skills </h4>
+
+                                        <p>I possess strong analytical abilities,
+                                            allowing me to assess situations, identify patterns,
+                                            and make data-driven decisions. My approach involves breaking
+                                            down complex data into actionable insights, which help inform
+                                            strategies and solutions. I am skilled at interpreting
+                                            trends, solving problems, and optimizing processes
+                                            to improve efficiency and outcomes.</p>
+
+                            </div>
+                     </div>
+            </div>
+        </span>
     </section>
     <br><br>
 
+<!--    <section id="myProjectHeader">-->
+<!--        <h1>My Project</h1><br>-->
 
-    <section id="myProject">
-        <h1>My Project</h1><br>
+<!--        <div data-aos="flip-up" id="myProject">-->
 
-        <div id="ticTacToe">
+<!--        <i class="fa-solid fa-chevron-circle-left fa-2xl" style="color: #ffffff;"></i>-->
 
-            <h3>Tic Tac Toe</h3>
-            <img src="asset/tic-tac-toe.svg" width="200" height="200" alt="ticTacToe">
+<!--        <span id="project">-->
 
-            <p>The Tic-Tac-Toe Game combines classic gameplay with the
-                Minimax Algorithm, creating an intelligent AI opponent.
-                The algorithm evaluates all possible moves, ensuring optimal
-                decisions while predicting the player's strategy. This advanced
-                AI showcases the power of game theory, recursion, and decision-making,
-                offering players a challenging, engaging, and immersive experience
-                while highlighting the practical applications of computational
-                logic and problem-solving techniques in gaming. 🎮</p>
+<!--            <div class="projectCards" id="ticTacToe">-->
 
-            <div id="ticTacToeProjectGithubLink">
+<!--                <img src="asset/tic-tac-toe.svg" width="200" height="200" alt="ticTacToe">-->
 
-                <a href="https://github.com/ShashinduMalshan/TicTacToeGame.git" target="_blank">
-                    <STRONG>Explore More On Github</STRONG>
-                    <img src="asset/icons8-arrow-100.png" width="25" height="10" alt="arrow">
-                    <img src="asset/icons8-github-64.png" width="54" height="54" alt="gitHub">
-                </a>
+<!--                <div class=" pro-info">-->
+
+<!--                    <h3>Tic Tac Toe</h3>-->
+
+<!--                    <p>The Tic-Tac-Toe Game integrates the Minimax Algorithm to create a smart AI opponent. By evaluating-->
+<!--                            all possible moves, it ensures optimal decisions and predicts player strategies.</p>-->
+
+<!--                    <div class="ProjectBtn" id="ticTacToeProjectGithubLink">-->
+<!--                        <a href="https://github.com/ShashinduMalshan/TicTacToeGame.git" target="_blank" class="btn">-->
+<!--                                <span class="btn-text">View on GitHub </span>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--            <br><br>-->
+
+<!--            <div class="projectCards" id="vehicleLicensePointSystem">-->
+
+<!--                <img src="asset/Screenshot%20from%202024-11-26%2011-46-05.png" width="350" height="200" alt="vehicleLicensePointSystem">-->
+
+<!--                <div class=" pro-info">-->
+
+
+<!--                    <h3>Vehicle License Point System</h3>-->
+
+<!--                     <p>The Vehicle License Point System modernizes traffic violation management by automating violation-->
+<!--                            recording, penalty point assignment, and real-time driver notifications.</p>-->
+
+<!--                    <div class="ProjectBtn" id="VLPSysProjectGithubLink">-->
+
+<!--                        <a href="https://github.com/ShashinduMalshan/VLP-system.git" target="_blank" class="btn">-->
+<!--                                <span class="btn-text">View on GitHub </span>-->
+<!--                            </a>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--            <br><br>-->
+
+<!--            <div class="projectCards" id="schoolManagementSystem">-->
+
+<!--                <img src="asset/image011-700x400.png" alt="schoolManagementSystem">-->
+
+<!--                <div class=" pro-info">-->
+
+<!--                        <h3>School Management System</h3>-->
+
+<!--                        <p>The School Management System streamlines academic and administrative tasks, managing admissions,-->
+<!--                            attendance, grades, and more. It offers real-time reporting and parent-teacher communication.</p>-->
+
+<!--                        <div class="ProjectBtn" id="schoolManagementSystemProjectGithubLink">-->
+
+<!--                            <a href="https://github.com/ShashinduMalshan/gdse-71-mvc-.git" target="_blank" class="btn">-->
+<!--                                <span class="btn-text">View on GitHub </span>-->
+<!--                            </a>-->
+
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="projectCards" id="schoolMandagementSystem">-->
+
+<!--                <img src="asset/image011-700x400.png" alt="schoolManagementSystem">-->
+
+<!--                <div class=" pro-info">-->
+
+<!--                        <h3>School Management System</h3>-->
+
+<!--                        <p>The School Management System streamlines academic and administrative tasks, managing admissions,-->
+<!--                            attendance, grades, and more. It offers real-time reporting and parent-teacher communication.</p>-->
+
+<!--                        <div class="ProjectBtn" id="schoolManadgementSystemProjectGithubLink">-->
+
+<!--                            <a href="https://github.com/ShashinduMalshan/gdse-71-mvc-.git" target="_blank" class="btn">-->
+<!--                                <span class="btn-text">View on GitHub </span>-->
+<!--                            </a>-->
+
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="projectCards" id="labytory"></div>-->
+
+<!--            <div class="projectCards" id="holla"></div>-->
+<!--       </span>-->
+
+<!--    <i class="fa-solid fa-circle-chevron-right fa-2xl" style="color: #ffffff;"></i>-->
+
+<!--        </div>-->
+
+<!--        <h4><em>My background combines technical expertise and-->
+<!--            innovative thinking to craft unique digital experiences.</em></h4>-->
+
+<!--    </section>-->
+
+<section id="myProjectHeader">
+        <h1>My Projects</h1>
+    <br>
+        <div id="projectsBody">
+
+            <div class="carousel-container" id="carousel">
+                <div class="projectCards" id="ticTacToe" style="transform: translateX(-50%) rotateY(0deg) translateZ(400px);">
+                    <img src="asset/ticTacToe.png" width="100" height="100" alt="ticTacToe">
+                    <div class="pro-info">
+                        <h3>Tic Tac Toe</h3>
+                        <p>The Tic-Tac-Toe Game integrates the Minimax Algorithm to create a smart AI opponent. By evaluating all possible moves, it ensures optimal decisions and predicts player strategies.</p>
+                        <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/TicTacToeGame.git" target="_blank" class="btn">
+                                <span class="btn-text">View on GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCards" id="vehicleLicensePointSystem" style="transform: translateX(-50%) rotateY(60deg) translateZ(400px);">
+                    <img src="asset/vlp.png" width="350" height="200" alt="vehicleLicensePointSystem">
+                    <div class="pro-info">
+                        <h3>Vehicle License Point System</h3>
+                        <p>The Vehicle License Point System modernizes traffic violation management by automating violation recording, penalty point assignment, and real-time driver notifications.</p>
+                        <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/VLP-system.git" target="_blank" class="btn">
+                                <span class="btn-text">View on GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCards" id="schoolManagementSystem" style="transform: translateX(-50%) rotateY(120deg) translateZ(400px);">
+                    <img src="asset/sch.png" alt="schoolManagementSystem">
+                    <div class="pro-info">
+                        <h3>School Management System</h3>
+                        <p>The School Management System streamlines academic and administrative tasks, managing admissions, attendance, grades, and more. It offers real-time reporting and parent-teacher communication.</p>
+                        <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/gdse-71-mvc-.git" target="_blank" class="btn">
+                                <span class="btn-text">View on GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCards" id="POS" style="transform: translateX(-50%) rotateY(180deg) translateZ(400px);">
+                    <img src="asset/pos1.png" alt="POSSystem">
+                    <div class="pro-info">
+                        <h3>Poit Of Sales System</h3>
+                        <p>A modern POS system with inventory management, sales tracking, and real-time reporting. Features include barcode scanning, customer management, and automated billing for streamlined retail operations.</p>
+                        <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/Bootstrap_Pos_System.git" class="btn" style="opacity: 0.7; cursor: not-allowed;">
+                                <span class="btn-text">Coming Soon</span>
+                                <i class="fas fa-clock"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCards" id="WhatsappAutomation" style="transform: translateX(-50%) rotateY(240deg) translateZ(400px);">
+                    <img src="asset/WhatsApp%20Birthday%20Auto-Reply%20Bot%20project.png" alt="WhatsappAutomation">
+                    <div class="pro-info">
+                        <h3>WhatsApp Birthday Responder</h3>
+                        <p>An intelligent automation script that detects birthday wishes on WhatsApp Web and sends personalized thank-you replies using Python and Selenium. Ideal for maintaining social connections effortlessly.</p>
+                            <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/Whats-app-Massage-Automation.git" class="btn" style="opacity: 0.7; cursor: not-allowed;">
+                                <span class="btn-text">In Development</span>
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCards" id="MentalHealthTherapyCenterSystem" style="transform: translateX(-50%) rotateY(300deg) translateZ(400px);">
+                    <img src="asset/medical.png" alt="MentalHealthTherapyCenterSystem">
+                    <div class="pro-info">
+                        <h3>Mental Health Therapy Center System</h3>
+                        <p>A management system for therapy centers to manage patient records, appointments, therapist schedules, and progress. It simplifies admin tasks while ensuring confidentiality and care.</p>
+                            <div class="ProjectBtn">
+                            <a href="https://github.com/ShashinduMalshan/Whats-app-Massage-Automation.git" class="btn" style="opacity: 0.7; cursor: not-allowed;">
+                                <span class="btn-text">In Development</span>
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
         </div>
-        <br><br>
 
-        <div id="vehicleLicensePointSystem">
-
-            <h3>Vehicle License Point System</h3>
-            <img src="asset/Screenshot%20from%202024-11-26%2011-46-05.png" width="400" height="200" alt="vehicleLicensePointSystem">
-
-            <p>The Vehicle License Point System is a cutting-edge solution designed
-                to modernize the way traffic violations are managed and to promote
-                safer driving practices. By leveraging technology, this system
-                automates the process of recording violations, assigning penalty points, and
-                notifying drivers in real time. With a focus on accuracy, transparency, and
-                efficiency, the system not only simplifies administrative tasks but also fosters
-                accountability among drivers. It introduces a proactive approach to road safety by
-                identifying repeat offenders, offering corrective training programs, and enabling
-                data-driven decisions for traffic management authorities. This innovative initiative is
-                a step forward in creating safer roads and a more responsible driving culture.</p>
-
-            <div id="VLPSysProjectGithubLink">
-
-                <a href="https://github.com/ShashinduMalshan/VLP-system.git" target="_blank">
-                    <STRONG>Explore More On Github</STRONG>
-                    <img src="asset/icons8-arrow-100.png" width="25" height="10" alt="arrow">
-                    <img src="asset/icons8-github-64.png" width="54" height="54" alt="gitHub">
-                </a>
-
-            </div>
-
-        </div>
-        <br><br>
-
-        <div id="schoolManagementSystem">
-
-            <h3>School Management System</h3>
-            <img src="asset/image011-700x400.png" width="400" height="200" alt="schoolManagementSystem">
-
-            <p>The School Management System is an advanced software solution designed to
-                simplify and automate administrative and academic operations in educational institutions.
-                It includes modules for managing student admissions, attendance, grades, staff records, timetables,
-                and library systems, ensuring efficient data organization and decision-making.
-                With features like real-time reporting, parent-teacher communication portals, and fee tracking, it
-                promotes transparency and fosters collaboration among stakeholders. By leveraging
-                modern technology, the system minimizes manual effort, reduces errors, and enhances
-                operational efficiency. Scalable and user-friendly, it adapts to institutions of all
-                sizes, supporting their growth while prioritizing quality education delivery.</p>
-
-            <div id="schoolManagementSystemProjectGithubLink">
-
-                <a href="https://github.com/ShashinduMalshan/gdse-71-mvc-.git" target="_blank">
-                    <STRONG>Explore More On Github</STRONG>
-                    <img src="asset/icons8-arrow-100.png" width="25" height="10" alt="arrow">
-                    <img src="asset/icons8-github-64.png" width="54" height="54" alt="gitHub">
-                </a>
-
-
-            </div>
-
-        </div>
-
+        <h4><em>My background combines technical expertise and innovative thinking to craft unique digital experiences.</em></h4>
     </section>
+
+
     <br><br>
 
-    <section id="contactMe">
+    <section id="assignments">
+        <h1>My Assignments</h1>
+        <div data-aos="zoom-in" class="assignments-container">
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>CSS Assignment</h3>
+                <p>A collection of responsive web layouts and animations created using pure CSS.</p>
+<!--                <a href="" class="assignment-btn">View Project</a>-->
+                <a href="#" class="assignment-btn" onclick="openDrivePopup('https://drive.google.com/drive/folders/1AEHVgMhq3CCjJ8jQUBkThBRlhdv3vo_Y?usp=sharing'); return false;">View Project</a>
 
-        <div id="contactHeader">
-            <h1>Contact Me</h1>
-                <h3>Let's Work Together</h3>
-                <p>Collaboration drives success. By combining skills,
-                    ideas, and dedication, we can overcome challenges and
-                    achieve shared goals. Together, we can inspire innovation,
-                    build strong connections, and create something truly remarkable.</p><br>
+            </div>
 
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-laptop-code fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>JavaScript Assignment</h3>
+                <p>Interactive web applications built with vanilla JavaScript and DOM manipulation.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-database fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>MySQL Assignment</h3>
+                <p>Database design and implementation projects using MySQL and SQL queries.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-brands fa-java fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>Java Assignment</h3>
+                <p>Object-oriented programming projects showcasing Java fundamentals and advanced concepts.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first responsive web design projects with modern UI/UX principles.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-icon">
+                    <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <h3>API Integration</h3>
+                <p>RESTful API integration projects with front-end and back-end implementation.</p>
+                <a href="#" class="assignment-btn">View Project</a>
+            </div>
         </div>
-
-            <div id="email">
-                <img src="asset/icons8-email-50.png" width="30" height="30" alt="email.img"> <strong>shasidumalshan9579@gmail.com</strong>
-            </div><br>
-
-            <div id="phone">
-                <img src="asset/icons8-phone-50%20(1).png" width="30" height="30" alt="phone.img"> <strong>074589968</strong>
-            </div><br><br>
-
-        <div id="socialImageInContact">
-
-            <a href="https://www.linkedin.com/in/shasidu-malshan-5978bb222/" target="_blank">
-                <img src="asset/icons8-linkedin-50.png" width="50"  height="50" alt="linkedin">
-            </a>
-
-            <a href="https://github.com/ShashinduMalshan" target="_blank">
-                <img src="asset/icons8-github-64.png" width="50"  height="50" alt="gitHub">
-            </a>
-
-            <a href="https://www.instagram.com/malshan_shasidu/" target="_blank">
-                <img src="asset/icons8-instagram-logo-64.png" width="50"  height="50" alt="instagram">
-            </a>
-
-            <a href="https://x.com/ShasiduM55723" target="_blank">
-                <img src="asset/icons8-x-50.png" width="50"  height="50" alt="x">
-            </a>
-
-        </div><br><br>
-
-        <form id="MassageSection">
-            <input type="text" placeholder="Enter You Name"><br><br>
-            <input type="text" placeholder="Enter You Email"><br><br>
-            <input type="text" placeholder="Enter You Subject"><br><br>
-            <textarea cols="30" rows="7" type="text" placeholder="Enter You Massage"></textarea><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
     </section>
 
+    <section id="contact">
+
+    <section  class="contactBody" id="contactBody">
+             <h1 id="contactMeTxt" >Contact Me</h1>
+
+            <div class="contact-container">
+
+                <div data-aos="zoom-in-right" class="contact-info">
+
+                        <h3>Let's Work Together</h3>
+
+                            <p class="contact-text">
+                                Collaboration drives success. By combining skills,
+                                ideas, and dedication, we can overcome challenges and
+                                achieve shared goals. Together, we can inspire innovation,
+                                build strong connections, and create something truly remarkable.
+                            </p><br>
+
+
+
+
+                            <div class="contact-method">
+                                <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>shasidumalshan9579@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <i class="fa-solid fa-phone-volume fa-2xl" style="color: #ffffff;"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>0714589968</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div id="socialImageInContact">
+
+                                    <a href="https://www.linkedin.com/in/shasidu-malshan-5978bb222/" target="_blank">
+                                        <img src="asset/icons8-linkedin-50.png" width="50"  height="50" alt="linkedin">
+                                    </a>
+
+                                    <a href="https://github.com/ShashinduMalshan" target="_blank">
+                                        <img src="asset/icons8-github-64.png" width="50"  height="50" alt="gitHub">
+                                    </a>
+
+                                    <a href="https://www.instagram.com/malshan_shasidu/" target="_blank">
+                                        <img src="asset/icons8-instagram-logo-64.png" width="50"  height="50" alt="instagram">
+                                    </a>
+
+                                    <a href="https://x.com/ShasiduM55723" target="_blank">
+                                        <img src="asset/icons8-x-50.png" width="50"  height="50" alt="x">
+                                    </a>
+
+                            </div><br><br>
+                </div>
+<!--abc-->
+                <div data-aos="zoom-in-left" class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" >
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" >
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button id="send-btn" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- Load scripts in correct order -->
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script src="background.js"></script>
+<script src="projects.js"></script>
+
+
+
+<script src="lib/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+    // Mobile menu functionality
+    $('.menu-btn').click(function() {
+      $('.nav-links').slideToggle(300);
+      $(this).toggleClass('fa-bars fa-xmark');
+    });
+
+    $(document).click(function(e) {
+      if (!$(e.target).closest('nav').length) {
+        $('.nav-links').slideUp(300);
+        $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+      }
+    });
+
+    $('.nav-links a').click(function() {
+      $('.nav-links').slideUp(300);
+      $('.menu-btn').removeClass('fa-xmark').addClass('fa-bars');
+    });
+
+    // Contact form send button
+    $('#send-btn').on('click', function () {
+      const phone = '94774832215';
+      const name = $('#name').val().trim();
+      const email = $('#email').val().trim();
+      const subject = $('#subject').val().trim();
+      const message = $('#message').val().trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!name || !email || !subject || !message) {
+        alert('Please fill out all the fields.');
+        return;
+      }
+
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      const fullMessage = `Contact Form Message\n\n` +
+          `Name: ${name}\n` +
+          `Email: ${email}\n` +
+          `Subject: ${subject}\n` +
+          `Message: ${message}`;
+
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+      window.open(url, '_blank');
+    });
+
+    // Simple card hover effect with jQuery (no rotation)
+    $(".projectCards").hover(
+      function () {
+        $(this).css('box-shadow', '0 8px 16px rgba(0,0,0,0.3)');
+      },
+      function () {
+        $(this).css('box-shadow', 'none');
+      }
+    );
+  });
+
+  function openDrivePopup(url) {
+    window.open(url, 'driveWindow', 'width=800,height=600,resizable=yes,scrollbars=yes');
+  }
+</script>
 
 </body>
 </html>
