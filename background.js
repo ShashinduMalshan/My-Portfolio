@@ -3,7 +3,7 @@ function createSpiralGalaxy() {
             container.innerHTML = '';
 
             // Create spiral arms
-            const numArms = 6; // Increased for richer effect
+            const numArms = 3; // Increased for richer effect
             for (let i = 0; i < numArms; i++) {
                 const arm = document.createElement('div');
                 arm.classList.add('spiral-arm');
